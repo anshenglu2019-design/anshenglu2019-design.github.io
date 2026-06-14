@@ -63,9 +63,11 @@ I am an Electrical Engineering student specializing at the intersection of **emb
 
 <!-- For the LED Cube -->
 <p align="center">
-  <video src="assets/Video_ Demonstration of the LED Matrix.mp4" width="600" controls></video>
+  <a href="https://youtube.com/shorts/9p_X2iOrVEk">
+    <img src="assets/led_matrix_thumbnail.png" width="600" alt="Watch LED Matrix Demo Video">
+  </a>
   <br>
-  <em>Video 1: Demonstration of the 3x3x3 LED matrix firmware logic and modes.</em>
+  <em>Video 1: Demonstration of the 3x3x3 LED matrix firmware logic and modes. (Click to watch on YouTube)</em>
 </p>
 
 ---
