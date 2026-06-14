@@ -67,7 +67,7 @@ I am an Electrical Engineering student specializing at the intersection of **emb
 
 **Status:** Certified Invention Patent Holder (Patent No. 1894025) | *Taiwan Intellectual Property Office* | <span style="float:right;">June 2024 – Aug. 2025</span>
 * **Hardware Architecture:** Independently designed and prototyped an intelligent mechatronic signaling device utilizing an **ESP32 microcontroller** and an **MPU-6050 Inertial Measurement Unit (IMU)** to capture real-time spatial telemetry.
-* **Algorithm Development:** Derived and implemented mathematical filtering algorithms to isolate and calculate the local 3D gravity vector in a body-fixed frame. By stripping out base gravitational acceleration from raw IMU readings, the firmware extracts true, unskewed kinematic acceleration patterns from user motion.
+* **Algorithm Development:** Derived and implemented mathematical filtering algorithms to calculate the acceleration and velocity. By stripping out base acceleration from raw IMU readings, the firmware extracts true, unskewed kinematic acceleration and velocity patterns from user motion.
 
 ---
 
