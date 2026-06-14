@@ -30,8 +30,9 @@ I am an Electrical Engineering student specializing at the intersection of **emb
 
 ### 1. Embedded Systems & Hardware Engineering (Formula SAE) 
 **Role:** Electrical Subsystems Intern | *Highlander Racing (FSAE)* | <span style="float:right;">Apr. 2026 – Present</span>
-* Contributed to the design of industrial automation and telemetry PCBs using **Altium Designer**.
-* Handled the pipeline from schematic capture of analog sensing stages through to calculating component tolerances and routing power stages to mitigate high-frequency signal noise.
+* Gaining hands-on experience with hardware design workflows by learning schematic capture and component placement in **Altium Designer**.
+* Designed and routed a fundamental through-hole automation control circuit featuring an integrated sensor stage, basic transistor switching logic, and a terminal interface.
+* Practiced trace routing basics, layout geometric organization, and component footprint mapping on a dual-layer board configuration.
 
 <p align="center">
   <img src="assets/pcb_layout.png" width="500" alt="Altium PCB Layout Design">
