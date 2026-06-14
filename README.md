@@ -61,6 +61,13 @@ I am an Electrical Engineering student specializing at the intersection of **emb
 * Modeled mechanical mass-spring-damper configurations in **MATLAB/Simulink** to analyze resonance data and power dissipation, designing a critically damped feedback system to optimize platform stability.
 * Fabricated and wired a $3\times3\times3$ LED matrix via an Arduino Micro, deploying a 4-mode firmware architecture featuring real-time pace controls through an ADC and a variable resistor.
 
+<!-- For the LED Cube -->
+<p align="center">
+  <video src="assets/Video_ Demonstration of the LED Matrix.mp4" width="500" controls muted autoplay loop></video>
+  <br>
+  <em>Video 1: Demonstration of the $3\times3\times3$ LED matrix firmware logic and modes.</em>
+</p>
+
 ---
 
 ## Patent
