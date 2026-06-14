@@ -37,7 +37,7 @@ I am an Electrical Engineering student specializing at the intersection of **emb
 <p align="center">
   <img src="assets/pcb_layout.png" width="500" alt="Altium PCB Layout Design">
   <br>
-  <em>Figure 1: Custom telemetry PCB routing and layer stack visualization.</em>
+  <em>Figure 1: Initial automated control circuit layout and trace routing in Altium Designer.</em>
 </p>
 
 
