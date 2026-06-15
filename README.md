@@ -64,7 +64,7 @@ I am an Electrical Engineering student specializing at the intersection of **emb
     <img src="assets/robotic_arm_thumbnail.png" width="600" alt="Watch OpenManipulator-X Robotic Arm Integration Demo">
   </a>
   <br>
-  <em>Video 2: Hardware-in-the-loop demonstration of the OpenManipulator-X robotic arm tracking motion control loops via custom 3D-printed interfaces. (Click to watch on YouTube)</em>
+  <em>Video 1: Hardware-in-the-loop demonstration of the OpenManipulator-X robotic arm tracking motion control loops via custom 3D-printed interfaces. (Click to watch on YouTube)</em>
 </p>
 
 * Modeled mechanical mass-spring-damper configurations in **MATLAB/Simulink** to analyze resonance data and power dissipation, designing a critically damped feedback system to optimize platform stability.
@@ -74,12 +74,12 @@ I am an Electrical Engineering student specializing at the intersection of **emb
     <td width="50%" align="center">
       <img src="assets/msd_responses.png" alt="Mass-Spring-Damper Simulation">
       <br>
-      <em>Figure 1: Simulated resonance responses of mass-spring-damper configurations.</em>
+      <em>Figure 3: Simulated resonance responses of mass-spring-damper configurations.</em>
     </td>
     <td width="50%" align="center">
       <img src="assets/step_response.png" alt="Feedback Control Step Response">
       <br>
-      <em>Figure 2: Closed-loop feedback performance achieving a critically damped response.</em>
+      <em>Figure 4: Closed-loop feedback performance achieving a critically damped response.</em>
     </td>
   </tr>
 </table>
@@ -92,7 +92,7 @@ I am an Electrical Engineering student specializing at the intersection of **emb
     <img src="assets/led_matrix_thumbnail.png" width="600" alt="Watch LED Matrix Demo Video">
   </a>
   <br>
-  <em>Video 1: Demonstration of the 3x3x3 LED matrix firmware logic and modes. (Click to watch on YouTube)</em>
+  <em>Video 2: Demonstration of the 3x3x3 LED matrix firmware logic and modes. (Click to watch on YouTube)</em>
 </p>
 
 ---
