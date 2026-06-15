@@ -59,6 +59,22 @@ I am an Electrical Engineering student specializing at the intersection of **emb
 **Role:** Robotics Research Intern | *German Aerospace Center (DLR) – Oberpfaffenhofen, Germany* | <span style="float:right;">Aug. 2024</span>
 * Integrated a custom mechatronic system utilizing an OpenManipulator-X robotic arm, implementing 3D-printed structural interfaces and motion control loops.
 * Modeled mechanical mass-spring-damper configurations in **MATLAB/Simulink** to analyze resonance data and power dissipation, designing a critically damped feedback system to optimize platform stability.
+<!-- For MATLAB/Simulink -->
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <img src="assets/msd_responses.png" alt="Mass-Spring-Damper Simulation">
+      <br>
+      <em>Figure 1: Simulated resonance responses of mass-spring-damper configurations.</em>
+    </td>
+    <td width="50%" align="center">
+      <img src="assets/step_response.png" alt="Feedback Control Step Response">
+      <br>
+      <em>Figure 2: Closed-loop feedback performance achieving a critically damped response.</em>
+    </td>
+  </tr>
+</table>
+
 * Fabricated and wired a 3x3x3 LED matrix via an Arduino Micro, deploying a 4-mode firmware architecture featuring real-time pace controls through an ADC and a variable resistor.
 
 <!-- For the LED Cube -->
