@@ -21,7 +21,7 @@ I am an Electrical Engineering student specializing in the intersection of **emb
 <details>
   <summary><b> The Engineer</b> (Current Roles & Responsibilities)</summary>
   <br>
-  As the incoming <b>IEEE Projects Chair</b> at UCR, an current undergraduate research assisstance at <b> RaMS Lab </b> at UCR and an current Electrical Subsystems Engineer for <b>Highlander Racing (Formula SAE)</b>, I design physical circuit architectures and couple them with intelligent control and computer vision pipelines to solve complex cyber-physical problems.
+  As the incoming <b>IEEE Projects Chair</b> at UCR, an Undergraduate Research Assistant at the <b> RaMS Lab </b> and an Electrical Subsystems Engineer for <b>Highlander Racing (Formula SAE)</b>, I design physical circuit architectures and couple them with intelligent control and computer vision pipelines to solve complex cyber-physical problems.
 </details>
 
 <details>
