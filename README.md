@@ -1,3 +1,7 @@
+# An-Sheng (Anson) Lu 
+### Electrical Engineering Undergraduate | UC Riverside 
+[Email](mailto:anshenglu2019@gmail.com) | [LinkedIn](https://linkedin.com/in/an-sheng-lu-2289462b5) | [Download Resume (PDF)](assets/An-Sheng_Lu_Resume.pdf)
+
 <!-- Add this right below your Header -->
 <p align="center">
   <a href="#about-me">About Me</a> • 
@@ -7,14 +11,40 @@
   <a href="#board-position">Leadership</a>
 </p>
 
-# An-Sheng (Anson) Lu 
-### Electrical Engineering Undergraduate | UC Riverside 
-[Email](mailto:anshenglu2019@gmail.com) | [LinkedIn](https://linkedin.com/in/an-sheng-lu-2289462b5) | [Download Resume (PDF)](assets/An-Sheng_Lu_Resume.pdf)
-
 ---
 
 ## About Me
-I am an Electrical Engineering student specializing at the intersection of **embedded systems, mechatronics, robotics, and automated deep learning workflows**. As the incoming **IEEE Projects Chair** at UCR and a current Electrical Subsystems Engineer for **Highlander Racing (Formula SAE)**, I design physical circuit architectures and couple them with intelligent control and computer vision pipelines to solve complex cyber-physical problems.
+I am an Electrical Engineering student specializing in the intersection of **embedded systems, mechatronics, robotics, and automated deep learning workflows**. 
+
+*Click on the sections below to explore my profile:*
+
+<details>
+  <summary><b> The Engineer</b> (Current Roles & Responsibilities)</summary>
+  <br>
+  As the incoming <b>IEEE Projects Chair</b> at UCR, an current undergraduate research assisstance at <b> RaMS Lab </b> at UCR and an current Electrical Subsystems Engineer for <b>Highlander Racing (Formula SAE)</b>, I design physical circuit architectures and couple them with intelligent control and computer vision pipelines to solve complex cyber-physical problems.
+</details>
+
+<details>
+  <summary><b> The Inventor</b> (Patent Details)</summary>
+  <br>
+  I am a <b> Certified Invention Patent Holder (Patent No. I894025)</b>. My work focuses on translating conceptual mechatronic designs into robust, real-world hardware. 
+</details>
+
+<details>
+  <summary><b> Awards & Competitions</b> (Recognition & Technical Challenges)</summary>
+  <br>
+  Beyond my primary research, I actively test my engineering methodologies in high-stakes environments:
+  <ul>
+    <li><b>2024 All Ring Competition:</b> Final Shortlisted Prize (Electrical Engineering Category). Defended methodologies before an industry panel.</li>
+    <li><b>Robotics Championships (2024):</b> 1st Place finishes in Robotics & Industrial Robot competitions.</li>
+  </ul>
+</details>
+
+<details>
+  <summary><b> My Mission</b> (Current Focus)</summary>
+  <br>
+  I believe engineering is the bridge between theoretical potential and physical reality. I am currently focused on mentoring fellow students through IEEE and pushing the limits of autonomous performance in Formula SAE.
+</details>
 
 ---
 
