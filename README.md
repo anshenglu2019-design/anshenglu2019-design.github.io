@@ -29,7 +29,7 @@ I am an Electrical Engineering student specializing at the intersection of **emb
 ## Engineering Projects & Research
 
 ### 1. Embedded Systems & Hardware Engineering (Formula SAE) 
-**Role:** Electrical Subsystems Intern | *Highlander Racing (FSAE)* | <span style="float:right;">Apr. 2026 – Present</span>
+**Role:** Electrical Subsystems Intern | *Highlander Racing (FSAE), UCR* | <span style="float:right;">Apr. 2026 – Present</span>
 * Gaining hands-on experience with hardware design workflows by learning schematic capture and component placement in **Altium Designer**.
 * Designed and routed a fundamental through-hole automation control circuit featuring an integrated sensor stage, basic transistor switching logic, and a terminal interface.
 * Practiced trace routing basics, layout geometric organization, and component footprint mapping on a dual-layer board configuration.
