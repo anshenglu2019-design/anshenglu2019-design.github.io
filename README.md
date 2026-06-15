@@ -56,7 +56,7 @@ I am an Electrical Engineering student specializing at the intersection of **emb
 
 
 ### 3. Control Systems & Robotics Simulation 
-**Role:** Robotics Research Intern | *German Aerospace Center (DLR) – Oberpfaffenhofen, Germany* | <span style="float:right;">Aug. 2024</span>
+**Role:** Robotics Research Intern | *German Aerospace Center (DLR), Oberpfaffenhofen, Germany* | <span style="float:right;">Aug. 2024</span>
 * Integrated a custom mechatronic system utilizing an OpenManipulator-X robotic arm, implementing 3D-printed structural interfaces and motion control loops.
 <!-- For OpenManipulator-X robotic arm -->
 <p align="center">
