@@ -5,7 +5,7 @@
 ---
 
 ## About Me
-I am an Electrical Engineering student specializing at the intersection of **embedded systems, mechatronics, robotics, and automated deep learning workflows**. As the incoming **IEEE Projects Chair** at UCR and an Electrical Subsystems Engineer for **Highlander Racing (Formula SAE)**, I design physical circuit architectures and couple them with intelligent control and computer vision pipelines to solve complex cyber-physical problems.
+I am an Electrical Engineering student specializing at the intersection of **embedded systems, mechatronics, robotics, and automated deep learning workflows**. As the incoming **IEEE Projects Chair** at UCR and a current Electrical Subsystems Engineer for **Highlander Racing (Formula SAE)**, I design physical circuit architectures and couple them with intelligent control and computer vision pipelines to solve complex cyber-physical problems.
 
 ---
 
