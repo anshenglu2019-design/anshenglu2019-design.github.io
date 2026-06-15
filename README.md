@@ -41,9 +41,9 @@ I am an Electrical Engineering student specializing in the intersection of **emb
 </details>
 
 <details>
-  <summary><b> My Mission</b> (Current Focus)</summary>
+  <summary><b> My Mission</b> (Current Focus & Goals)</summary>
   <br>
-  I believe engineering is the bridge between theoretical potential and physical reality. I am currently focused on mentoring fellow students through IEEE and pushing the limits of autonomous performance in Formula SAE.
+  I believe engineering is the bridge between theoretical potential and physical reality. Through my work at the <b>RaMS Lab</b>, I aim to push the boundaries of automated deep learning, while concurrently applying those insights to enhance autonomous performance in Formula SAE and lower the barrier to entry for fellow students via IEEE. My mission is to build robust, scalable hardware solutions that transform complex research into tangible, real-world impact.
 </details>
 
 ---
