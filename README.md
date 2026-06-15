@@ -100,8 +100,40 @@ I am an Electrical Engineering student specializing at the intersection of **emb
 ## Patent
 
 **Status:** Certified Invention Patent Holder (Patent No. 1894025) | *Taiwan Intellectual Property Office* | <span style="float:right;">June 2024 – Aug. 2025</span>
-* **Hardware Architecture:** Independently designed and prototyped an intelligent mechatronic signaling device utilizing an **ESP32 microcontroller** and an **MPU-6050 Inertial Measurement Unit (IMU)** to capture real-time spatial telemetry.
-* **Algorithm Development:** Derived and implemented mathematical filtering algorithms to calculate the acceleration and velocity. By stripping out base acceleration from raw IMU readings, the firmware extracts true, unskewed kinematic acceleration and velocity patterns from user motion.
+<ul>
+  <li><strong>Hardware Architecture:</strong> Independently designed and prototyped an intelligent mechatronic signaling device utilizing an <strong>ESP32 microcontroller</strong> and an <strong>MPU-6050 Inertial Measurement Unit (IMU)</strong> to capture real-time spatial telemetry.</li>
+  <li><strong>Signal Processing & Logic:</strong> Engineered a real-time motion-sensing pipeline, utilizing digital <strong>high-pass filtering</strong> to isolate dynamic movement from gravity-induced static bias.</li>
+  <li><strong>Kinematic Analysis:</strong> Implemented <strong>deterministic 10ms-interval sampling loops</strong> to perform numerical integration of filtered acceleration, enabling high-precision <strong>velocity estimation</strong> and <strong>zero-crossing detection</strong> for responsive lighting behavior.</li>
+  <li><strong>State-Machine Design:</strong> Developed a robust <strong>state-based reset mechanism</strong> incorporating hysteresis (resetting to 0 only after acceleration remains < 2.0 m/s² for 150ms), ensuring stable system performance and effective noise rejection during operation[cite: 1].</li>
+</ul>
+
+<table>
+  <tr>
+    <td width="33%" align="center">
+      <img src="assets/patent_schematic.png" alt="Official Patent Technical Drawing">
+      <br>
+      <em>Figure 1: Official patent schematic drawing (Patent No. I894025).</em>
+    </td>
+    <td width="33%" align="center">
+      <img src="assets/hardware_architecture.jpg" alt="Breadboard Prototype">
+      <br>
+      <em>Figure 2: Breadboard prototype showcasing ESP32 and MPU6050 signal validation.</em>
+    </td>
+    <td width="33%" align="center">
+      <img src="assets/baton_prototype.jpg" alt="Physical Prototype PCB Assembly">
+      <br>
+      <em>Figure 3: Populated physical PCB prototype and directional signaling layout.</em>
+    </td>
+  </tr>
+</table>
+
+<p align="center">
+  <a href="https://youtu.be/_PxIBCmbsC0">
+    <img src="assets/patent_demo_thumbnail.png" width="600" alt="Watch Patent Device Demo Video">
+  </a>
+  <br>
+  <em>Video 2: Demonstration of the 3x3x3 LED matrix firmware logic and modes. (Click to watch on YouTube)</em>
+</p>
 
 ---
 
