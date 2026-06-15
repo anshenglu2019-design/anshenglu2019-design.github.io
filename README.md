@@ -1,3 +1,12 @@
+<!-- Add this right below your Header -->
+<p align="center">
+  <a href="#about-me">About Me</a> • 
+  <a href="#education">Education</a> • 
+  <a href="#engineering-projects--research">Projects</a> • 
+  <a href="#patent">Patent</a> • 
+  <a href="#board-position">Leadership</a>
+</p>
+
 # An-Sheng (Anson) Lu 
 ### Electrical Engineering Undergraduate | UC Riverside 
 [Email](mailto:anshenglu2019@gmail.com) | [LinkedIn](https://linkedin.com/in/an-sheng-lu-2289462b5) | [Download Resume (PDF)](assets/An-Sheng_Lu_Resume.pdf)
