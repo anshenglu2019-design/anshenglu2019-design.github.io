@@ -110,19 +110,19 @@ I am an Electrical Engineering student specializing at the intersection of **emb
 <table>
   <tr>
     <td width="33%" align="center">
-      <img src="assets/patent_schematic.png" alt="Official Patent Technical Drawing">
+      <img src="assets/Circuit_Design.png" alt="ESP32 to MPU6050 Interface">
       <br>
-      <em>Figure 1: Official patent schematic drawing (Patent No. I894025).</em>
+      <em>Figure 5: System Interconnect: I2C interface schematic between the ESP32 and MPU6050.</em>
     </td>
     <td width="33%" align="center">
-      <img src="assets/hardware_architecture.jpg" alt="Breadboard Prototype">
+      <img src="assets/Hardware_Architecture.png" alt="Breadboard Prototype">
       <br>
-      <em>Figure 2: Breadboard prototype showcasing ESP32 and MPU6050 signal validation.</em>
+      <em>Figure 6: Breadboard prototype showcasing ESP32 and MPU6050 signal validation.</em>
     </td>
     <td width="33%" align="center">
-      <img src="assets/baton_prototype.jpg" alt="Physical Prototype PCB Assembly">
+      <img src="assets/baton_prototype.png" alt="Physical Prototype PCB Assembly">
       <br>
-      <em>Figure 3: Populated physical PCB prototype and directional signaling layout.</em>
+      <em>Figure 7: Populated physical PCB prototype and directional signaling layout.</em>
     </td>
   </tr>
 </table>
@@ -132,7 +132,7 @@ I am an Electrical Engineering student specializing at the intersection of **emb
     <img src="assets/patent_demo_thumbnail.png" width="600" alt="Watch Patent Device Demo Video">
   </a>
   <br>
-  <em>Video 2: Demonstration of the 3x3x3 LED matrix firmware logic and modes. (Click to watch on YouTube)</em>
+  <em>Video 3: Performance demonstration of the motion-sensing signaling device. (Click to watch on YouTube)</em>
 </p>
 
 ---
@@ -171,3 +171,13 @@ I am an Electrical Engineering student specializing at the intersection of **emb
 ### Mechanical Resonance in a Shaking Device | <span style="float:right;">Mar. 2025</span>
 * Conducted structural physics modeling to analyze how shifting spring constants directly alter system power dissipation. 
 * Modeled oscillatory limits to define optimal damping boundaries for automated dynamic platforms.
+
+---
+### Official Patent Documentation
+<div align="center">
+  <a href="assets/full_patent_certificate.pdf">
+    <img src="assets/patent_certificate_preview.png" alt="Official Patent Certificate" width="60%">
+  </a>
+  <br>
+  <em>Click the image to view the full PDF certification (Patent No. I894025).</em>
+</div>
