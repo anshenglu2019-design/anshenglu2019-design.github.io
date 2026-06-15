@@ -58,6 +58,15 @@ I am an Electrical Engineering student specializing at the intersection of **emb
 ### 3. Control Systems & Robotics Simulation 
 **Role:** Robotics Research Intern | *German Aerospace Center (DLR) – Oberpfaffenhofen, Germany* | <span style="float:right;">Aug. 2024</span>
 * Integrated a custom mechatronic system utilizing an OpenManipulator-X robotic arm, implementing 3D-printed structural interfaces and motion control loops.
+<!-- For OpenManipulator-X robotic arm -->
+<p align="center">
+  <a href="https://youtu.be/rqDFj4NV7VE">
+    <img src="assets/robotic_arm_thumbnail.png" width="600" alt="Watch OpenManipulator-X Robotic Arm Integration Demo">
+  </a>
+  <br>
+  <em>Video 2: Hardware-in-the-loop demonstration of the OpenManipulator-X robotic arm tracking motion control loops via custom 3D-printed interfaces. (Click to watch on YouTube)</em>
+</p>
+
 * Modeled mechanical mass-spring-damper configurations in **MATLAB/Simulink** to analyze resonance data and power dissipation, designing a critically damped feedback system to optimize platform stability.
 <!-- For MATLAB/Simulink -->
 <table>
