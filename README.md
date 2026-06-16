@@ -8,7 +8,9 @@
   <a href="#education">Education</a> • 
   <a href="#engineering-projects--research">Projects</a> • 
   <a href="#patent">Patent</a> • 
-  <a href="#board-position">Leadership</a>
+  <a href="#engineering-competitions">Engineering Competitions</a> • 
+  <a href="#board-position">Leadership</a> •
+  <a href="#independent-academic-studies">Independent Studies</a>
 </p>
 
 ---
@@ -35,7 +37,7 @@ I am an Electrical Engineering student specializing in the intersection of **emb
   <br>
   Beyond my primary research, I actively test my engineering methodologies in high-stakes environments:
   <ul>
-    <li><b>2024 All Ring Competition:</b> Final Shortlisted Prize (Electrical Engineering Category). Defended methodologies before an industry panel.</li>
+    <li><b>2024 All Ring Competition:</b> Final Shortlisted Prize (Electrical Engineering Category).</li>
     <li><b>Robotics Championships (2024):</b> 1st Place finishes in Robotics & Industrial Robot competitions.</li>
   </ul>
 </details>
@@ -43,7 +45,7 @@ I am an Electrical Engineering student specializing in the intersection of **emb
 <details>
   <summary><b> My Mission</b> (Current Focus & Goals)</summary>
   <br>
-  I believe engineering is the bridge between theoretical potential and physical reality. Through my work at the <b>RaMS Lab</b>, I aim to push the boundaries of automated deep learning, while concurrently applying those insights to enhance autonomous performance in Formula SAE and lower the barrier to entry for fellow students via IEEE. My mission is to build robust, scalable hardware solutions that transform complex research into tangible, real-world impact.
+  I believe engineering is the bridge between theoretical potential and physical reality. Through my work at the <b>RaMS Lab</b>, I aim to push the boundaries of automated deep learning, while concurrently applying those insights to enhance autonomous performance in <b>Highlander Racing (FSAE)</b> and <b>IEEE</b> student branch. My mission is to build robust, scalable hardware solutions that transform complex research into tangible, real-world impact.
 </details>
 
 ---
@@ -52,7 +54,7 @@ I am an Electrical Engineering student specializing in the intersection of **emb
 
 ### University of California, Riverside | <span style="float:right;">Expected Spring 2029</span>
 **B.S. Electrical Engineering** | *Bourns College of Engineering*
-* **Cumulative GPA:** 3.74 / 4.00
+* **Cumulative GPA:** 3.78 / 4.00
 * **Scholarships:** UCR Achievement Scholarship Recipient (2025–2029)
 * **Relevant Coursework:** Multivariable Calculus, Physics, Data Structures & Algorithms (C++)
 
@@ -166,6 +168,17 @@ I am an Electrical Engineering student specializing in the intersection of **emb
   </tr>
 </table>
 
+### Official Patent Documentation
+<div align="center">
+  <a href="assets/full_patent_certificate.pdf">
+    <img src="assets/patent_certificate_preview.png" alt="Official Patent Certificate" width="60%">
+  </a>
+  <br>
+  <em>Figure 8: Official patent certification (Patent No. I894025). Click to view full PDF.</em>
+</div>
+
+<br><br>
+
 <p align="center">
   <a href="https://youtu.be/_PxIBCmbsC0">
     <img src="assets/patent_demo_thumbnail.png" width="600" alt="Watch Patent Device Demo Video">
@@ -210,13 +223,3 @@ I am an Electrical Engineering student specializing in the intersection of **emb
 ### Mechanical Resonance in a Shaking Device | <span style="float:right;">Mar. 2025</span>
 * Conducted structural physics modeling to analyze how shifting spring constants directly alter system power dissipation. 
 * Modeled oscillatory limits to define optimal damping boundaries for automated dynamic platforms.
-
----
-### Official Patent Documentation
-<div align="center">
-  <a href="assets/full_patent_certificate.pdf">
-    <img src="assets/patent_certificate_preview.png" alt="Official Patent Certificate" width="60%">
-  </a>
-  <br>
-  <em>Click the image to view the full PDF certification (Patent No. I894025).</em>
-</div>
