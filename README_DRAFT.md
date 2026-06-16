@@ -47,8 +47,8 @@
 *   **Logic:** Engineered deterministic 10ms-interval sampling loops for real-time velocity estimation and high-precision zero-crossing detection.
 *   **Robustness:** Implemented state-based reset with hysteresis to reject noise during non-linear movement.
 <p align="center">
-  <img src="assets/baton_prototype.png" width="300">
-  <br><em>Figure 3: Physical PCB prototype and directional signaling assembly.</em>
+  <img src="assets/Hardware_Architecture.png" width="300">
+  <br><em>Figure 3: Physical PCB and directional signaling assembly.</em>
 </p>
 
 ---
