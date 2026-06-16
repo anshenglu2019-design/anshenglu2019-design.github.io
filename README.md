@@ -111,6 +111,8 @@
 | **Leadership** | Incoming Projects Chair, IEEE UCR Branch |
 | **Competitions** | All Ring Finalist, 1st Place (Robotics/Industrial Robot) |
 
+---
+
 ###  Technical Proficiency
 * **Languages:** C/C++, Python (PyTorch, OpenCV), MATLAB/Simulink, LabVIEW, ROS (Basic)
 * **Engineering Tools:** Altium Designer, SolidWorks, Arduino, Visual Studio/VS Code
