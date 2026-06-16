@@ -108,7 +108,7 @@ I am an Electrical Engineering student specializing in the intersection of **emb
   <em>Video 1: Hardware-in-the-loop demonstration of the OpenManipulator-X robotic arm tracking motion control loops via custom 3D-printed interfaces. (Click to watch on YouTube)</em>
 </p>
 
-* Modeled mechanical mass-spring-damper configurations in **MATLAB/Simulink** to analyze resonance data and power dissipation, designing a critically damped feedback system to optimize platform stability.
+* Performed structural physics modeling in **MATLAB/Simulink** to analyze resonance data and power dissipation within mass-spring-damper configurations, establishing baseline damping coefficients for platform stability.
 <!-- For MATLAB/Simulink -->
 <table>
   <tr>
