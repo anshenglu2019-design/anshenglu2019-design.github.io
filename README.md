@@ -112,5 +112,5 @@
 | **Competitions** | All Ring Finalist, 1st Place (Robotics/Industrial Robot) |
 
 ###  Technical Proficiency
-* **Languages:** C/C++, Python (PyTorch, OpenCV), MATLAB/Simulink, LabVIEW
-* **Engineering Tools:** Altium Designer, SolidWorks, ROS (Basic), Arduino/ESP32, Git
+* **Languages:** C/C++, Python (PyTorch, OpenCV), MATLAB/Simulink, LabVIEW, ROS (Basic)
+* **Engineering Tools:** Altium Designer, SolidWorks, Arduino, Visual Studio/VS Code
