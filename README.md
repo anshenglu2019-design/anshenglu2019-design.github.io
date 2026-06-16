@@ -158,12 +158,12 @@ I am an Electrical Engineering student specializing in the intersection of **emb
     <td width="33%" align="center">
       <img src="assets/Hardware_Architecture.png" alt="Breadboard Prototype">
       <br>
-      <em>Figure 6: Breadboard prototype showcasing ESP32 and MPU6050 signal validation.</em>
+      <em>Figure 6: Populated physical PCB and directional signaling layout.</em>
     </td>
     <td width="33%" align="center">
       <img src="assets/baton_prototype.png" alt="Physical Prototype PCB Assembly">
       <br>
-      <em>Figure 7: Populated physical PCB prototype and directional signaling layout.</em>
+      <em>Figure 7: Breadboard prototype showcasing ESP32 and MPU6050 signal validation.</em>
     </td>
   </tr>
 </table>
