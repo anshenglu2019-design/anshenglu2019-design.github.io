@@ -118,7 +118,7 @@ I am an Electrical Engineering student specializing in the intersection of **emb
       <em>Figure 3: Simulated resonance responses of mass-spring-damper configurations.</em>
     </td>
     <td width="50%" align="center">
-      <img src="assets/step_response.png" alt="Feedback Control Step Response">
+      <img src="../assets/step_response.png" alt="Feedback Control Step Response">
       <br>
       <em>Figure 4: Closed-loop feedback performance achieving a critically damped response.</em>
     </td>
