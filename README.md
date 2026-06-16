@@ -114,5 +114,5 @@
 ---
 
 ###  Technical Proficiency
-* **Languages:** C/C++, Python (PyTorch, OpenCV), MATLAB/Simulink, LabVIEW, ROS (Basic)
+* **Programming:** C/C++, Python (PyTorch, OpenCV), MATLAB/Simulink, LabVIEW, ROS (Basic)
 * **Engineering Tools:** Altium Designer, SolidWorks, Arduino, Visual Studio/VS Code
