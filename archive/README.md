@@ -76,7 +76,7 @@ I am an Electrical Engineering student specializing in the intersection of **emb
 * Practiced trace routing basics, layout geometric organization, and component footprint mapping on a dual-layer board configuration.
 
 <p align="center">
-  <img src="assets/pcb_layout.png" width="500" alt="Altium PCB Layout Design">
+  <img src="../assets/pcb_layout.png" width="500" alt="Altium PCB Layout Design">
   <br>
   <em>Figure 1: Initial automated control circuit layout and trace routing in Altium Designer.</em>
 </p>
@@ -89,7 +89,7 @@ I am an Electrical Engineering student specializing in the intersection of **emb
 * Architected automated data cleaning workflows featuring normal distribution filtering and sensor calibration to translate raw pixel data into high-accuracy phenotypic measurements for life-cycle analysis.
 
 <p align="center">
-  <img src="assets/inference_result.jpg" width="500" alt="Computer Vision ML Inference Result">
+  <img src="../assets/inference_result.jpg" width="500" alt="Computer Vision ML Inference Result">
   <br>
   <em>Figure 2: Real image inference.</em>
 </p>
@@ -102,7 +102,7 @@ I am an Electrical Engineering student specializing in the intersection of **emb
 <!-- For OpenManipulator-X robotic arm -->
 <p align="center">
   <a href="https://youtu.be/rqDFj4NV7VE">
-    <img src="assets/robotic_arm_thumbnail.png" width="600" alt="Watch OpenManipulator-X Robotic Arm Integration Demo">
+    <img src="../assets/robotic_arm_thumbnail.png" width="600" alt="Watch OpenManipulator-X Robotic Arm Integration Demo">
   </a>
   <br>
   <em>Video 1: Hardware-in-the-loop demonstration of the OpenManipulator-X robotic arm tracking motion control loops via custom 3D-printed interfaces. (Click to watch on YouTube)</em>
@@ -113,7 +113,7 @@ I am an Electrical Engineering student specializing in the intersection of **emb
 <table>
   <tr>
     <td width="50%" align="center">
-      <img src="assets/msd_responses.png" alt="Mass-Spring-Damper Simulation">
+      <img src="../assets/msd_responses.png" alt="Mass-Spring-Damper Simulation">
       <br>
       <em>Figure 3: Simulated resonance responses of mass-spring-damper configurations.</em>
     </td>
@@ -130,7 +130,7 @@ I am an Electrical Engineering student specializing in the intersection of **emb
 <!-- For the LED Cube -->
 <p align="center">
   <a href="https://youtube.com/shorts/9p_X2iOrVEk">
-    <img src="assets/led_matrix_thumbnail.png" width="600" alt="Watch LED Matrix Demo Video">
+    <img src="../assets/led_matrix_thumbnail.png" width="600" alt="Watch LED Matrix Demo Video">
   </a>
   <br>
   <em>Video 2: Demonstration of the 3x3x3 LED matrix firmware logic and modes. (Click to watch on YouTube)</em>
@@ -151,17 +151,17 @@ I am an Electrical Engineering student specializing in the intersection of **emb
 <table>
   <tr>
     <td width="33%" align="center">
-      <img src="assets/Circuit_Design.png" alt="ESP32 to MPU6050 Interface">
+      <img src="../assets/Circuit_Design.png" alt="ESP32 to MPU6050 Interface">
       <br>
       <em>Figure 5: System Interconnect: I2C interface schematic between the ESP32 and MPU6050.</em>
     </td>
     <td width="33%" align="center">
-      <img src="assets/Hardware_Architecture.png" alt="Breadboard Prototype">
+      <img src="../assets/Hardware_Architecture.png" alt="Breadboard Prototype">
       <br>
       <em>Figure 6: Populated physical PCB and directional signaling layout.</em>
     </td>
     <td width="33%" align="center">
-      <img src="assets/baton_prototype.png" alt="Physical Prototype PCB Assembly">
+      <img src="../assets/baton_prototype.png" alt="Physical Prototype PCB Assembly">
       <br>
       <em>Figure 7: Breadboard prototype showcasing ESP32 and MPU6050 signal validation.</em>
     </td>
@@ -170,8 +170,8 @@ I am an Electrical Engineering student specializing in the intersection of **emb
 
 ### Official Patent Documentation
 <div align="center">
-  <a href="assets/full_patent_certificate.pdf">
-    <img src="assets/patent_certificate_preview.png" alt="Official Patent Certificate" width="60%">
+  <a href="../assets/full_patent_certificate.pdf">
+    <img src="../assets/patent_certificate_preview.png" alt="Official Patent Certificate" width="60%">
   </a>
   <br>
   <em>Figure 8: Official patent certification (Patent No. I894025). Click to view full PDF.</em>
@@ -181,7 +181,7 @@ I am an Electrical Engineering student specializing in the intersection of **emb
 
 <p align="center">
   <a href="https://youtu.be/_PxIBCmbsC0">
-    <img src="assets/patent_demo_thumbnail.png" width="600" alt="Watch Patent Device Demo Video">
+    <img src="../assets/patent_demo_thumbnail.png" width="600" alt="Watch Patent Device Demo Video">
   </a>
   <br>
   <em>Video 3: Performance demonstration of the motion-sensing signaling device. (Click to watch on YouTube)</em>
