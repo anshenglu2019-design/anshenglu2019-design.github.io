@@ -223,3 +223,8 @@ I am an Electrical Engineering student specializing in the intersection of **emb
 ### Mechanical Resonance in a Shaking Device | <span style="float:right;">Mar. 2025</span>
 * Conducted structural physics modeling to analyze how shifting spring constants directly alter system power dissipation. 
 * Modeled oscillatory limits to define optimal damping boundaries for automated dynamic platforms.
+
+---
+### Technical Proficiency
+* **Languages:** C/C++, Python (PyTorch, OpenCV), LabVIEW, MATLAB/Simulink, ROS (Basic).
+* **Software & Hardware Skills:** Tinkercad, Creo, Arduino (IDE), Visual Studio/VS Code, Altium Designer, SolidWorks.
