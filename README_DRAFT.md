@@ -10,9 +10,9 @@
 
 ---
 
-## 🛠 Engineering Projects & Research
+## Engineering Projects & Research
 
-### 1. Occlusion-Free Growth Monitoring (RaMS Lab)
+### 1. Mealworm Growth Monitoring (RaMS Lab)
 *   **Problem:** Traditional length-based larval measurements fail in high-density environments due to occlusion and segmentation noise.
 *   **Approach:** Engineered an end-to-end pipeline using **AISFormer** for instance segmentation and topological skeleton extraction.
 *   **Insight:** Shifting to **median-width statistical modeling** across the skeleton’s central 80% provides local invariance to partial occlusion and eliminates head/tail artifacts.
@@ -41,7 +41,7 @@
 
 ---
 
-## 🏆 Patent — System-Level Engineering
+## Patent
 **Certified Invention Patent Holder (Patent No. 1894025)**
 *   **Design:** ESP32 + MPU6050 integration for motion telemetry.
 *   **Logic:** Engineered deterministic 10ms-interval sampling loops for real-time velocity estimation and high-precision zero-crossing detection.
@@ -53,7 +53,7 @@
 
 ---
 
-## 🎓 Education & Leadership
+## Education & Leadership
 
 | Category | Details |
 | :--- | :--- |
@@ -62,6 +62,6 @@
 | **Leadership** | Incoming Projects Chair, IEEE UCR Branch |
 | **Competitions** | All Ring Finalist, 1st Place (Robotics/Industrial Robot) |
 
-### 🛠 Technical Proficiency
+### Technical Proficiency
 * **Languages:** C/C++, Python (PyTorch, OpenCV), MATLAB/Simulink, LabVIEW
 * **Engineering Tools:** Altium Designer, SolidWorks, ROS (Basic), Arduino/ESP32, Git
