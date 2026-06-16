@@ -53,11 +53,11 @@
 <table align="center">
   <tr>
     <td width="50%" align="center">
-      <img src="assets/step_response.png" width="300"><br><em>Figure 3: Closed-loop feedback performance achieving a critically damped response.</em>
+      <img src="assets/step_response.png"><br><em>Figure 3: Closed-loop feedback performance achieving a critically damped response.</em>
     </td>
     <td width="50%" align="center">
       <a href="https://youtube.com/shorts/9p_X2iOrVEk">
-        <img src="assets/led_matrix_thumbnail.png" width="300">
+        <img src="assets/led_matrix_thumbnail.png">
       </a>
       <br><em>Video 2: LED Matrix firmware logic (Click to watch).</em>
     </td>
