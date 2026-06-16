@@ -2,7 +2,7 @@
 
 # An-Sheng (Anson) Lu
 ### Electrical Engineering Undergraduate | UC Riverside
-**Research Assistant (RaMS Lab) | IEEE Projects Chair | FSAE Electrical Intern**
+**Research Assistant (RaMS Lab) | IEEE Projects Chair (Incoming) | FSAE Electrical Subsystems Intern**
 
 *[Email](mailto:anshenglu2019@gmail.com) | [LinkedIn](https://linkedin.com/in/an-sheng-lu-2289462b5) | [Download Resume (PDF)](assets/An-Sheng_Lu_Resume.pdf)*
 
@@ -12,28 +12,28 @@
 
 ## Engineering Projects & Research
 
-### 1. Mealworm Growth Monitoring (RaMS Lab)
-*   **Problem:** Traditional length-based larval measurements fail in high-density environments due to occlusion and segmentation noise.
-*   **Approach:** Engineered an end-to-end pipeline using **AISFormer** for instance segmentation and topological skeleton extraction.
-*   **Insight:** Shifting to **median-width statistical modeling** across the skeleton’s central 80% provides local invariance to partial occlusion and eliminates head/tail artifacts.
+### 1. Research Assistant | Mealworm Growth Monitoring - RaMS Lab
+*   **Problem:** Traditional growth monitoring involves heavy manual work and time consumption.
+*   **Approach:** Engineered an end-to-end pipeline using **AISFormer** for worm detection under occlusion environments and growth width measurement for growth stage classification.
+*   **Insight:** Shifting to **median-width statistical modeling** across the skeleton’s central 90% provides local invariance to partial occlusion and eliminates head/tail artifacts.
 <p align="center">
   <img src="assets/inference_result.jpg" width="500" alt="ML Inference Result">
-  <br><em>Figure 1: Real-time inference showing instance segmentation in dense scenes.</em>
+  <br><em>Figure 1: Inference showing worm detection and width measurement in dense scenes.</em>
 </p>
 
-### 2. Embedded Systems & Hardware (Formula SAE)
+### 2. FSAE Electrical Intern | Embedded Systems & Hardware - Highlander Racing (FSAE)
 *   **Problem:** Bridging theoretical circuit design with physical constraints in a high-performance racing environment.
 *   **Approach:** Designed and routed control circuits for sensor integration using **Altium Designer** with a focus on trace routing and footprint mapping.
 *   **Insight:** Effective hardware design requires balancing logical requirements with physical manufacturability, noise rejection, and board geometry.
 <p align="center">
   <img src="assets/pcb_layout.png" width="500" alt="PCB Layout">
-  <br><em>Figure 2: Control circuit layout and trace routing in Altium Designer.</em>
+  <br><em>Figure 2:  Initial automated control circuit layout and trace routing in Altium Designer.</em>
 </p>
 
-### 3. Robotics & Control Systems (DLR Internship)
+### 3. Intern | Robotics & Control Systems - German Aerospace Center (DLR)
 *   **Problem:** Achieving stable, predictable trajectory tracking in physical robotic systems.
-*   **Approach:** Integrated OpenManipulator-X arm; modeled mechanical resonance and power dissipation in **MATLAB/Simulink**.
-*   **Insight:** Platform stability is governed by damping behavior; applying critically damped feedback systems is essential for minimizing oscillations.
+*   **Approach:** Customized a track system, adding one degree of freedom to the system, and integrated the OpenManipulator-X arm.
+*   **Insight:** 3D-printed the parts of the robotic arm, the track, and the handler for the object, and programmed the full robotic system to manipulate in desire movement.
 <p align="center">
   <a href="https://youtu.be/rqDFj4NV7VE"><img src="assets/robotic_arm_thumbnail.png" width="500"></a>
   <br><em>Video 1: Hardware-in-the-loop motion control demo.</em>
