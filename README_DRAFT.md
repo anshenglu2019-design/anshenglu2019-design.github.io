@@ -3,6 +3,7 @@
 # An-Sheng (Anson) Lu
 ### Electrical Engineering Undergraduate | UC Riverside
 **Research Assistant (RaMS Lab) | IEEE Projects Chair | FSAE Electrical Intern**
+<br><br>
 *[Email](mailto:anshenglu2019@gmail.com) | [LinkedIn](https://linkedin.com/in/an-sheng-lu-2289462b5) | [Download Resume (PDF)](assets/An-Sheng_Lu_Resume.pdf)*
 
 </div>
