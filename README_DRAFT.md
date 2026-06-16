@@ -46,6 +46,24 @@
   <br><em>Video 1: Hardware-in-the-loop motion control demo.(Click to watch on YouTube)</em>
 </p>
 
+**Supporting Engineering Contributions:**
+    *   **Mechanical Modeling:** Conducted structural physics modeling in **MATLAB/Simulink** to analyze resonance and power dissipation in mass-spring-damper systems.
+    *   **Embedded Firmware:** Developed a 3x3x3 LED matrix using **Arduino Micro**, featuring a 4-mode firmware architecture with real-time ADC-based pace control.
+    
+<table align="center">
+  <tr>
+    <td width="50%" align="center">
+      <img src="assets/step_response.png" width="300"><br><em>Figure 3: Resonance analysis in MATLAB.</em>
+    </td>
+    <td width="50%" align="center">
+      <a href="https://youtube.com/shorts/9p_X2iOrVEk">
+        <img src="assets/led_matrix_thumbnail.png" width="300">
+      </a>
+      <br><em>Video 2: LED Matrix firmware logic (Click to watch).</em>
+    </td>
+  </tr>
+</table>
+    
 ---
 
 ##  Patent
@@ -79,7 +97,7 @@
     <img src="assets/patent_demo_thumbnail.png" width="600" alt="Watch Patent Device Demo Video">
   </a>
   <br>
-  <em>Video 2: Performance demonstration of the motion-sensing signaling device. (Click to watch on YouTube)</em>
+  <em>Video 3: Performance demonstration of the motion-sensing signaling device. (Click to watch on YouTube)</em>
 </p>
 
 ---
