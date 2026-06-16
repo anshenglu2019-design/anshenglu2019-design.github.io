@@ -39,11 +39,11 @@
 ### 3. Robotics Research Intern | Control Systems (German Aerospace Center - DLR)
 *   **Problem:** Achieving stable, predictable trajectory tracking in physical robotic systems.
 *   **Approach:** Integrated an **OpenManipulator-X** arm; customized a track system with 3D-printed structural interfaces to extend the platform's workspace.
-*   **Insight:** Achieving stable motion required implementing custom control loops to manipulate physical parts with high precision; programmed system to execute complex trajectory tracking.
+*   **Insight:** Achieving stable motion required implementing custom control loops to manipulate physical parts; programmed the system to execute complex trajectory tracking.
 
 <p align="center">
   <a href="https://youtu.be/rqDFj4NV7VE"><img src="assets/robotic_arm_thumbnail.png" width="500"></a>
-  <br><em>Video 1: Hardware-in-the-loop motion control demo.</em>
+  <br><em>Video 1: Hardware-in-the-loop motion control demo.(Click to watch on YouTube)</em>
 </p>
 
 ---
@@ -54,9 +54,32 @@
 *   **Logic:** Engineered deterministic 10ms-interval sampling loops for real-time velocity estimation and high-precision zero-crossing detection.
 *   **Robustness:** Implemented state-based reset with hysteresis to reject noise during non-linear movement.
 
+<table>
+  <tr>
+    <td width="33%" align="center">
+      <img src="assets/Circuit_Design.png" alt="ESP32 to MPU6050 Interface">
+      <br>
+      <em>Figure 5: System Interconnect: I2C interface schematic between the ESP32 and MPU6050.</em>
+    </td>
+    <td width="33%" align="center">
+      <img src="assets/Hardware_Architecture.png" alt="Breadboard Prototype">
+      <br>
+      <em>Figure 6: Populated physical PCB and directional signaling layout.</em>
+    </td>
+    <td width="33%" align="center">
+      <img src="assets/baton_prototype.png" alt="Physical Prototype PCB Assembly">
+      <br>
+      <em>Figure 7: Breadboard prototype showcasing ESP32 and MPU6050 signal validation.</em>
+    </td>
+  </tr>
+</table>
+
 <p align="center">
-  <img src="assets/Hardware_Architecture.png" width="300">
-  <br><em>Figure 3: Physical PCB and directional signaling assembly.</em>
+  <a href="https://youtu.be/_PxIBCmbsC0">
+    <img src="assets/patent_demo_thumbnail.png" width="600" alt="Watch Patent Device Demo Video">
+  </a>
+  <br>
+  <em>Video 2: Performance demonstration of the motion-sensing signaling device. (Click to watch on YouTube)</em>
 </p>
 
 ---
