@@ -102,7 +102,7 @@
 
 ---
 
-##  Education & Leadership
+##  Education & Recent Activities
 
 | Category | Details |
 | :--- | :--- |
