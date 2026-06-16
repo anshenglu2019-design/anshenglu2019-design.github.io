@@ -59,7 +59,7 @@
       <a href="https://youtube.com/shorts/9p_X2iOrVEk">
         <img src="assets/led_matrix_thumbnail.png">
       </a>
-      <br><em>Video 2: LED Matrix firmware logic (Click to watch).</em>
+      <br><em>Video 2: LED Matrix firmware logic (Click to watch on YouTube).</em>
     </td>
   </tr>
 </table>
