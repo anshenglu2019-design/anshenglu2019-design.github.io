@@ -36,7 +36,7 @@
 
 <br>
 
-### 3. Robotics Research Intern | Control Systems (German Aerospace Center - DLR)
+### 3. Robotics Intern | Robotics and Control Systems (German Aerospace Center - DLR)
 *   **Problem:** Achieving stable, predictable trajectory tracking in physical robotic systems.
 *   **Approach:** Integrated an **OpenManipulator-X** arm; customized a track system with 3D-printed structural interfaces to extend the platform's workspace.
 *   **Insight:** Achieving stable motion required implementing custom control loops to manipulate physical parts; programmed the system to execute complex trajectory tracking.
