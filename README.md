@@ -47,7 +47,7 @@
 </p>
 
 **Supplementary Technical Prototyping:**
-*   **Mechanical Modeling:** Performed structural physics modeling in **MATLAB/Simulink** to analyze resonance data and power dissipation within mass-spring-damper configurations, establishing baseline damping coefficients for platform stability.
+*   **Mechanical Modeling:** Performed structural physics modeling mass-spring-damper system in **MATLAB/Simulink**, establishing baseline damping coefficients for platform stability.
 *   **Embedded Firmware:** Developed a 3x3x3 LED matrix using **Arduino Micro**, featuring a 4-mode firmware architecture with real-time ADC-based pace control.
     
 <table align="center">
