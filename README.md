@@ -107,7 +107,7 @@
 | Category | Details |
 | :--- | :--- |
 | **Education** | B.S. Electrical Engineering, UCR (Expected 2029) |
-| **GPA** | 3.78 / 4.00 |
+| **GPA** | 3.84 / 4.00 |
 | **Leadership** | Incoming Projects Chair, IEEE UCR Branch |
 | **Competitions** | All Ring Finalist, 1st Place (Robotics/Industrial Robot) |
 
