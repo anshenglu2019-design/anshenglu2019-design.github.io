@@ -14,7 +14,7 @@
 
 ### 1. Research Assistant | Mealworm Growth Monitoring (RaMS Lab)
 *   **Problem:** Traditional growth monitoring involves manual labor and significant time-costs.
-*   **Approach:** Engineered an end-to-end pipeline using **AISFormer** for detection in high-occlusion environments and growth width measurement for classification.
+*   **Approach:** Engineered an end-to-end pipeline using an **Amodal Instance Segmentation Transformer (AISFormer)** for mealworm detection and growth width measurement for classification in high-occlusion, overlapping environments.
 *   **Insight:** Shifting to **median-width statistical modeling** across the skeleton’s central 90% provides local invariance to partial occlusion and eliminates head/tail noise.
 
 <p align="center">
