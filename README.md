@@ -12,7 +12,8 @@
 
 ##  Engineering Projects & Research
 
-### 1. Research Assistant | Mealworm Growth Monitoring (RaMS Lab)
+### 1. Undergraduate Research Assistant | Mealworm Growth Monitoring (RaMS Lab)
+*Oct. 2025 - Present*
 *   **Problem:** Traditional growth monitoring involves manual labor and significant time-costs.
 *   **Approach:** Engineered an end-to-end **Computer Vision and Deep Learning** pipeline using an **Amodal Instance Segmentation Transformer (AISFormer)** for mealworm detection and growth width measurement for classification in high-occlusion, overlapping environments.
 *   **Insight:** Shifting to **median-width statistical modeling** across the skeleton’s central 90% provides local invariance to partial occlusion and eliminates head/tail noise.
@@ -25,6 +26,7 @@
 <br>
 
 ### 2. FSAE Electrical Intern | Embedded Systems & Hardware (Highlander Racing)
+*Apr. 2026 - Present*
 *   **Problem:** Bridging theoretical circuit design with physical manufacturing constraints.
 *   **Approach:** Designed and routed control circuits for sensor integration using **Altium Designer** with a focus on trace routing and component footprint mapping.
 *   **Insight:** Effective hardware design requires balancing logical circuit requirements with physical manufacturability, noise rejection, and board geometry.
@@ -36,7 +38,8 @@
 
 <br>
 
-### 3. Robotics Intern | Mechatronic Systems Department (MSY), German Aerospace Center (DLR) 
+### 3. Robotics Intern | Mechatronic Systems Development (Mechatronic Systems Department - MSY, German Aerospace Center - DLR)
+*August 2024*
 *   **Problem:** Achieving stable, predictable trajectory tracking in physical robotic systems.
 *   **Approach:** Integrated an **OpenManipulator-X** arm; customized a rail system with **3D-printed structural interfaces** to extend the platform's workspace.
 *   **Insight:** Achieving stable motion required implementing custom control loops to manipulate physical parts; programmed the system to execute complex trajectory tracking.
@@ -70,6 +73,7 @@
 
 ##  Patent
 **Certified Invention Patent Holder (Patent No. 1894025)**
+*Oct. 2025 - Present*
 *   **Design:** **ESP32 + MPU6050** integration for motion telemetry.
 *   **Logic:** Engineered **deterministic 10ms-interval sampling loops** for real-time **velocity estimation** and high-precision **zero-crossing detection**.
 *   **Robustness:** Implemented **state-based reset with hysteresis** to reject noise during non-linear movement.
