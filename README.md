@@ -43,7 +43,7 @@
 
 <p align="center">
   <a href="https://youtu.be/rqDFj4NV7VE"><img src="assets/robotic_arm_thumbnail.png" width="500"></a>
-  <br><em>Video 1: Hardware-in-the-loop motion control demo.(Click to watch on YouTube)</em>
+  <br><em> Video 1: Hardware-in-the-loop motion control demo.(Click to watch on YouTube)</em>
 </p>
 
 #### Hardware Prototyping & Controls Validation:
@@ -53,8 +53,7 @@
 <table align="center">
   <tr>
     <td width="50%" align="center">
-      <img src="assets/step_response.png"><br><em>Figure 3: Closed-loop feedback performance achieving a critically damped response.</em> 
-      
+      <img src="assets/step_response.png"><br><em>Figure 3: Closed-loop feedback performance achieving a critically damped response.</em>     
     </td>
     <td width="50%" align="center">
       <a href="https://youtube.com/shorts/9p_X2iOrVEk">
