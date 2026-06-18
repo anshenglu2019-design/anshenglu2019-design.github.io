@@ -46,8 +46,8 @@
   <br><em>Video 1: Hardware-in-the-loop motion control demo.(Click to watch on YouTube)</em>
 </p>
 
-**Supplementary Technical Prototyping:**
-*   **Mechanical Modeling:** Performed structural physics modeling mass-spring-damper system in **MATLAB/Simulink**, establishing baseline damping coefficients for platform stability.
+#### Hardware Prototyping & Controls Validation:
+*   **Dynamic System Modeling:** Performed structural physics modeling mass-spring-damper system in **MATLAB/Simulink**, establishing baseline damping coefficients for platform stability.
 *   **Embedded Firmware:** Developed a 3x3x3 LED matrix using **Arduino Micro**, featuring a 4-mode firmware architecture with real-time ADC-based pace control.
     
 <table align="center">
