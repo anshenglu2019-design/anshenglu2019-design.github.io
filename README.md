@@ -47,7 +47,7 @@
 </p>
 
 #### Hardware Prototyping & Controls Validation:
-*   **Dynamic System Modeling:** Performed structural physics modeling mass-spring-damper system in **MATLAB/Simulink**, establishing baseline damping coefficients for platform stability.
+*   **Dynamic System Modeling:** Performed structural physics modeling mass-spring-damper system in **MATLAB/Simulink**, achieving a highly stable, critically damped system response.
 *   **Embedded Firmware:** Developed a 3x3x3 LED matrix using **Arduino Micro**, featuring a 4-mode firmware architecture with real-time ADC-based pace control.
     
 <table align="center">
