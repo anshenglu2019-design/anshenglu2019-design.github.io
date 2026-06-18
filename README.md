@@ -38,7 +38,7 @@
 
 ### 3. Robotics Intern | Robotics and Control Systems (German Aerospace Center - DLR)
 *   **Problem:** Achieving stable, predictable trajectory tracking in physical robotic systems.
-*   **Approach:** Integrated an **OpenManipulator-X** arm; customized a track system with 3D-printed structural interfaces to extend the platform's workspace.
+*   **Approach:** Integrated an **OpenManipulator-X** arm; customized a track system with **3D-printed structural interfaces** to extend the platform's workspace.
 *   **Insight:** Achieving stable motion required implementing custom control loops to manipulate physical parts; programmed the system to execute complex trajectory tracking.
 
 <p align="center">
@@ -47,13 +47,14 @@
 </p>
 
 #### Hardware Prototyping & Controls Validation:
-*   **Dynamic System Modeling:** Performed structural physics modeling mass-spring-damper system in **MATLAB/Simulink**, achieving a highly stable, critically damped system response.
-*   **Embedded Firmware:** Developed a 3x3x3 LED matrix using **Arduino Micro**, featuring a 4-mode firmware architecture with real-time ADC-based pace control.
+*   **Dynamic System Modeling:** Performed structural physics modeling mass-spring-damper system in **MATLAB/Simulink**, achieving a highly stable, **critically damped system response**.
+*   **Embedded Firmware:** Developed a 3x3x3 LED matrix using **Arduino Micro**, featuring a 4-mode firmware architecture with **real-time ADC-based pace control**.
     
 <table align="center">
   <tr>
     <td width="50%" align="center">
-      <img src="assets/step_response.png"><br><em>Figure 3: Closed-loop feedback performance achieving a critically damped response.</em>
+      <img src="assets/step_response.png"><br><em>Figure 3: Closed-loop feedback performance achieving a critically damped response.</em> 
+      
     </td>
     <td width="50%" align="center">
       <a href="https://youtube.com/shorts/9p_X2iOrVEk">
