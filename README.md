@@ -49,7 +49,7 @@
 #### Cross-Functional Technical Scope:
 *   **Electronics & E-CAD:** Created and interpreted complex schematic diagrams using **Altium Designer**, executed hands-on high-reliability **THT and SMD soldering technology**, and constructed a physical **3x3x3 LED cube**.
 *   **Mechanics & M-CAD:** Developed mechanical components using **Creo**, manufactured functional structural prototypes using **3D printing processes**, and managed the final processing and assembly of primary structures.
-*   **Embedded & GUI Programming:** Programmed the **OpenCR board in C** for direct hardware-level manipulation of the robotic arm, implemented bare-metal firmware in C for the LED hardware, and engineered a custom **user interface (GUI) in Java** to supervise the **OpenManipulator-X**.
+*   **Embedded & GUI Programming:** Programmed the **OpenCR board in C** for direct hardware-level manipulation of the robotic arm, implemented **bare-metal firmware in C** for the LED hardware, and engineered a custom **user interface (GUI) in Java** to supervise the **OpenManipulator-X**.
 *   **Control Systems Validation:** Utilized **MATLAB/Simulink** to analyze dynamic performance, executing exact **calculations of control behavior for impedance-controlled systems** to ensure operational stability.
     
 <table align="center">
