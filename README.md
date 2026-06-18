@@ -68,9 +68,9 @@
 
 ##  Patent
 **Certified Invention Patent Holder (Patent No. 1894025)**
-*   **Design:** ESP32 + MPU6050 integration for motion telemetry.
-*   **Logic:** Engineered deterministic 10ms-interval sampling loops for real-time velocity estimation and high-precision zero-crossing detection.
-*   **Robustness:** Implemented state-based reset with hysteresis to reject noise during non-linear movement.
+*   **Design:** **ESP32 + MPU6050** integration for motion telemetry.
+*   **Logic:** Engineered **deterministic 10ms-interval sampling loops** for real-time **velocity estimation** and high-precision **zero-crossing detection**.
+*   **Robustness:** Implemented **state-based reset with hysteresis** to reject noise during non-linear movement.
 
 <table>
   <tr>
