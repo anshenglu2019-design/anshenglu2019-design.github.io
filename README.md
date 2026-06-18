@@ -36,9 +36,9 @@
 
 <br>
 
-### 3. Robotics Intern | Robotics and Control Systems (German Aerospace Center - DLR)
+### 3. Robotics Intern | Mechatronic Systems Department (MSY), German Aerospace Center (DLR) 
 *   **Problem:** Achieving stable, predictable trajectory tracking in physical robotic systems.
-*   **Approach:** Integrated an **OpenManipulator-X** arm; customized a track system with **3D-printed structural interfaces** to extend the platform's workspace.
+*   **Approach:** Integrated an **OpenManipulator-X** arm; customized a rail system with **3D-printed structural interfaces** to extend the platform's workspace.
 *   **Insight:** Achieving stable motion required implementing custom control loops to manipulate physical parts; programmed the system to execute complex trajectory tracking.
 
 <p align="center">
@@ -46,9 +46,11 @@
   <br><em> Video 1: Hardware-in-the-loop motion control demo.(Click to watch on YouTube)</em>
 </p>
 
-#### Hardware Prototyping & Controls Validation:
-*   **Dynamic System Modeling:** Performed structural physics modeling mass-spring-damper system in **MATLAB/Simulink**, achieving a highly stable, **critically damped system response**.
-*   **Embedded Firmware:** Developed a 3x3x3 LED matrix using **Arduino Micro**, featuring a 4-mode firmware architecture with **real-time ADC-based pace control**.
+#### Cross-Functional Technical Scope:
+*   **Electronics & E-CAD:** Created and interpreted complex schematic diagrams using **Altium Designer**, executed hands-on high-reliability **THT and SMD soldering technology**, and constructed a physical **3x3x3 LED cube**.
+*   **Mechanics & M-CAD:** Developed mechanical components using **Creo**, manufactured functional structural prototypes using **3D printing processes**, and managed the final processing and assembly of primary structures.
+*   **Embedded & GUI Programming:** Programmed the **OpenCR board in C** for direct hardware-level manipulation of the robotic arm, implemented bare-metal firmware in C for the LED hardware, and engineered a custom **user interface (GUI) in Java** to supervise the **OpenManipulator-X**.
+*   **Control Systems Validation:** Utilized **MATLAB/Simulink** to analyze dynamic performance, executing exact **calculations of control behavior for impedance-controlled systems** to ensure operational stability.
     
 <table align="center">
   <tr>
