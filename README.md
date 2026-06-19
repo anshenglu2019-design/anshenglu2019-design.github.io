@@ -75,7 +75,7 @@
 **Certified Invention Patent Holder (Patent No. 1894025)**
 
 *June 2024 - Aug. 2025* | [View Official Patent Certificate](assets/full_patent_certificate.pdf)
-*   **Authority:** Granted by the **Taiwan Intellectual Property Office (TIPO)** as a formal **Invention Patent on Aug. 11, 2025.
+*   **Authority:** Granted by the **Taiwan Intellectual Property Office (TIPO)** as a formal **Invention Patent** on Aug. 11, 2025.
 *   **Design:** **ESP32 + MPU6050** integration for motion telemetry.
 *   **Logic:** Engineered **deterministic 10ms-interval sampling loops** for real-time **velocity estimation** and high-precision **zero-crossing detection**.
 *   **Robustness:** Implemented **state-based reset with hysteresis** to reject noise during non-linear movement.
