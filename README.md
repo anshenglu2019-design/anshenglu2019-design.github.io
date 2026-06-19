@@ -132,6 +132,8 @@
 *   **Sensor Fusion & Control:** Executed sensor fusion using Ultrasonic and Color Detection sensors for obstacle avoidance and environmental interaction via LabVIEW.
 *   **Communication:** Implemented basic ROS interfacing for system communication.
 
+---
+
 ###  **Competitions & Awards**
 #### **Award 1: Robotics Competition (Club/School-Based)**
 *   **Perception & Manipulation:** Integrated a specialized color sensor to scan target objects and engineered a custom 1-dimensional robotic arm mechanism to physically grab the pieces.
@@ -141,6 +143,15 @@
 #### **Award 2: Industrial Robot Competition (Nation-Based)**
 *   **Logic Execution:** Implemented precise line-following, state-machine processing, and color-zone registration algorithms for complex warehouse/industrial automation tracks.
 *   **Award:** **1st Place Winner** – 2024 Industrial Robot Competition (Mar 2024).
+
+1].
+
+#### **Award 3: 2024 All Ring Competition (Regional Finalist)**
+*   **Hardware Integration:** Selected as a finalist by entering and demonstrating the fully functional assembly prototype from my approved utility patent (Invention Patent No. 1894025).
+*   **Technical Showcase:** Validated the real-time sensor processing capability of the ESP32 and MPU-6050 IMU configuration under competitive scrutiny.
+*   **Award:** **Final Shortlisted Prize** – Electrical Engineering Category, Tainan, Taiwan (Oct 2024).
+
+---
 
 <table>
   <tr>
