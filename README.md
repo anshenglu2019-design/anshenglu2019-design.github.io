@@ -123,4 +123,4 @@
 
 ###  Technical Proficiency
 * **Programming:** C/C++, Python (PyTorch, OpenCV), MATLAB/Simulink, LabVIEW, ROS (Basic)
-* **Engineering Tools:** Altium Designer, SolidWorks, Arduino, Visual Studio/VS Code
+* **Engineering Tools:** Altium Designer, Creo, SolidWorks, Arduino, Visual Studio/VS Code
