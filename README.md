@@ -128,18 +128,19 @@
  **Robotics Club Member | National Yunlin University of Science & Tech (NYUST)**
 *Sep 2023 – June 2024*
 
-*  Collaborated with club members to program an omnidirectional mobile robot with a three-Mecanum wheel chassis; executed sensor fusion using Ultrasonic and Color Detection sensors for obstacle avoidance and environmental interaction via LabVIEW.
-*  Implemented basic ROS interfacing for system communication.
+*   **System Development:** Collaborated with club members to program an omnidirectional mobile robot with a three-Mecanum wheel chassis.
+*   **Sensor Fusion & Control:** Executed sensor fusion using Ultrasonic and Color Detection sensors for obstacle avoidance and environmental interaction via LabVIEW.
+*   **Communication:** Implemented basic ROS interfacing for system communication.
 
-*  **Competitions & Awards**
-*   **Award 1: Robotics Competition (Club/School-Based)**
+###  **Competitions & Awards**
+#### **Award 1: Robotics Competition (Club/School-Based)**
 *   **Perception & Manipulation:** Integrated a specialized color sensor to scan target objects and engineered a custom 1-dimensional robotic arm mechanism to physically grab the pieces.
 *   **Navigation Logic:** Programmed autonomous closed-loop routing via LabVIEW, enabling the robot to dynamically identify the object's color and navigate directly to its corresponding color-coded drop-off zone.
     *   **Award:** **1st Place Winner** – Robotics Competition (Dec 2023).
 
-*   **Award 2: Industrial Robot Competition (Nation-Based)**
-    *   **Logic Execution:** Implemented precise line-following, state-machine processing, and color-zone registration algorithms for complex warehouse/industrial automation tracks.
-    *   **Award:** **1st Place Winner** – 2024 Industrial Robot Competition (Mar 2024).
+#### **Award 2: Industrial Robot Competition (Nation-Based)**
+*   **Logic Execution:** Implemented precise line-following, state-machine processing, and color-zone registration algorithms for complex warehouse/industrial automation tracks.
+*   **Award:** **1st Place Winner** – 2024 Industrial Robot Competition (Mar 2024).
 
 <table>
   <tr>
