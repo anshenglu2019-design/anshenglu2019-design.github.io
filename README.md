@@ -114,9 +114,11 @@
 
 | Category | Details |
 | :--- | :--- |
-| **Education** | B.S. Electrical Engineering, UCR (Expected 2029) |
+| **Education** | B.S. Electrical Engineering, University of California, Riverside (Expected 2029) |
 | **GPA** | 3.84 / 4.00 |
 | **Leadership** | Incoming Projects Chair, IEEE UCR Branch |
+| **Research** | Undergraduate Research Assistant, RaMS Lab (Computer Vision & Deep Learning) |
+| **Engineering** | Electrical Engineering Intern, Highlander Racing (Formula SAE) |
 | **Competitions** | All Ring Finalist, 1st Place (Robotics/Industrial Robot) |
 
 ---
