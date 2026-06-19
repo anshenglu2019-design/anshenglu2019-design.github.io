@@ -20,7 +20,6 @@
 | **Leadership** | Incoming Projects Chair, IEEE UCR Branch |
 | **Research** | Undergraduate Research Assistant, RaMS Lab (Computer Vision & Deep Learning) |
 | **Engineering** | Electrical Engineering Intern, Highlander Racing (Formula SAE) |
-| **Competitions** | All Ring Finalist (Electrical Engineering Category), 1st Places (Robotics/Industrial Robot) |
 
 ---
 
