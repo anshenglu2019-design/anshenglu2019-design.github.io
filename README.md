@@ -2,11 +2,25 @@
 
 # An-Sheng (Anson) Lu
 ### Electrical Engineering Undergraduate | UC Riverside
-**Research Assistant (RaMS Lab) | IEEE Projects Chair (Incoming) | FSAE Electrical Subsystems Intern**
 
 *[Email](mailto:anshenglu2019@gmail.com) | [LinkedIn](https://linkedin.com/in/an-sheng-lu-2289462b5) | [Download Resume (PDF)](assets/An-Sheng_Lu_Resume.pdf)*
 
 </div>
+
+<blockquote>
+  <strong>Electrical Engineering student at UCR with strong passions in embedded firmware, robotics, and computer vision.</strong>
+</blockquote>
+
+##  Education & Recent Works
+
+| Category | Details |
+| :--- | :--- |
+| **Education** | B.S. Electrical Engineering, University of California, Riverside (Expected 2029) |
+| **GPA** | 3.84 / 4.00 |
+| **Leadership** | Incoming Projects Chair, IEEE UCR Branch |
+| **Research** | Undergraduate Research Assistant, RaMS Lab (Computer Vision & Deep Learning) |
+| **Engineering** | Electrical Engineering Intern, Highlander Racing (Formula SAE) |
+| **Competitions** | All Ring Finalist, 1st Place (Robotics/Industrial Robot) |
 
 ---
 
@@ -107,19 +121,6 @@
   <br>
   <em>Video 3: Performance demonstration of the motion-sensing signaling device. (Click to watch on YouTube)</em>
 </p>
-
----
-
-##  Education & Recent Activities
-
-| Category | Details |
-| :--- | :--- |
-| **Education** | B.S. Electrical Engineering, University of California, Riverside (Expected 2029) |
-| **GPA** | 3.84 / 4.00 |
-| **Leadership** | Incoming Projects Chair, IEEE UCR Branch |
-| **Research** | Undergraduate Research Assistant, RaMS Lab (Computer Vision & Deep Learning) |
-| **Engineering** | Electrical Engineering Intern, Highlander Racing (Formula SAE) |
-| **Competitions** | All Ring Finalist, 1st Place (Robotics/Industrial Robot) |
 
 ---
 
