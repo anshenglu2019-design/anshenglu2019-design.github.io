@@ -146,8 +146,8 @@
 
 1].
 
-#### **Award 3: 2024 All Ring Competition (Regional Finalist)**
-*   **Hardware Integration:** Selected as a finalist by entering and demonstrating the fully functional assembly prototype from my approved utility patent (Invention Patent No. 1894025).
+#### **Award 3: 2024 All Ring Competition (National Finalist)**
+*   **Hardware Integration:** Selected as a finalist by entering and demonstrating the assembly prototype of my approved patent.
 *   **Technical Showcase:** Validated the real-time sensor processing capability of the ESP32 and MPU-6050 IMU configuration under competitive scrutiny.
 *   **Award:** **Final Shortlisted Prize** – Electrical Engineering Category, Tainan, Taiwan (Oct 2024).
 
