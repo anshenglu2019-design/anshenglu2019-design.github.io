@@ -12,7 +12,7 @@
 
 ##  Engineering Projects & Research
 
-### 1. Undergraduate Research Assistant | Mealworm Growth Monitoring (RaMS Lab)
+### 1. Undergraduate Research Assistant | Mealworm Growth Monitoring | RaMS Lab, UCR
 *Oct. 2025 - Present*
 *   **Problem:** Traditional growth monitoring involves manual labor and significant time-costs.
 *   **Approach:** Engineered an end-to-end **Computer Vision and Deep Learning** pipeline using an **Amodal Instance Segmentation Transformer (AISFormer)** for mealworm detection and growth width measurement for classification in high-occlusion, overlapping environments.
@@ -25,7 +25,7 @@
 
 <br>
 
-### 2. FSAE Electrical Intern | Embedded Systems & Hardware (Highlander Racing)
+### 2. FSAE Electrical Intern | Embedded Systems & Hardware | Highlander Racing, UCR
 *Apr. 2026 - Present*
 *   **Problem:** Bridging theoretical circuit design with physical manufacturing constraints.
 *   **Approach:** Designed and routed control circuits for sensor integration using **Altium Designer** with a focus on trace routing and component footprint mapping.
@@ -38,7 +38,7 @@
 
 <br>
 
-### 3. Robotics Intern | Mechatronic Systems Development (Mechatronic Systems Department - MSY, German Aerospace Center - DLR)
+### 3. Robotics Intern | Mechatronic Systems Development | German Aerospace Center - DLR, Germany
 *August 2024*
 *   **Problem:** Achieving stable, predictable trajectory tracking in physical robotic systems.
 *   **Approach:** Integrated an **OpenManipulator-X** arm; customized a rail system with **3D-printed structural interfaces** to extend the platform's workspace.
@@ -75,6 +75,7 @@
 **Certified Invention Patent Holder (Patent No. 1894025)**
 
 *June 2024 - Aug. 2025* | [View Official Patent Certificate](assets/full_patent_certificate.pdf)
+*   **Authority:** Granted by the **Taiwan Intellectual Property Office (TIPO)** as a formal **Invention Patent on Aug. 11, 2025.
 *   **Design:** **ESP32 + MPU6050** integration for motion telemetry.
 *   **Logic:** Engineered **deterministic 10ms-interval sampling loops** for real-time **velocity estimation** and high-precision **zero-crossing detection**.
 *   **Robustness:** Implemented **state-based reset with hysteresis** to reject noise during non-linear movement.
