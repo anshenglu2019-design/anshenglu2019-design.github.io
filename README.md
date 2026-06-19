@@ -123,6 +123,27 @@
 
 ---
 
+### Club Experience
+
+#### **Robotics Club Member | National Yunlin University of Science & Tech (NYUST)**
+*Sep 2023 – June 2024*
+
+*  Collaborated with club members to program an omnidirectional mobile robot with a three-Mecanum wheel chassis; executed sensor fusion using Ultrasonic and Color Detection sensors for obstacle avoidance and environmental interaction via LabVIEW.
+•  Implemented basic ROS interfacing for system communication.
+
+*   **Award 1: Robotics Competition (Club/School-Based)**
+    *   **Architecture:** Collaborated to design and program an omnidirectional mobile robot utilizing a custom three-Mecanum wheel chassis.
+    *   **Perception:** Executed multi-sensor fusion using Ultrasonic and Color Detection sensors paired with LabVIEW to calculate real-time obstacle avoidance boundaries.
+    *   **🏆 Award:** **1st Place Winner** – Robotics Competition (Dec 2023).
+    *   🔗 **[Watch Maze Navigation Demo (YouTube)](PASTE_YOUR_ROBOTICS_COMPETITION_YOUTUBE_URL_HERE)**
+
+*   **Award 2: Industrial Robot Competition (National-Based)**
+    *   **Logic Execution:** Implemented precise line-following, state-machine processing, and color-zone registration algorithms for complex warehouse/industrial automation tracks.
+    *   **🏆 Award:** **1st Place Winner** – 2024 Industrial Robot Competition (Mar 2024).
+    *   🔗 **[Watch Competition Run Video (YouTube)](PASTE_YOUR_INDUSTRIAL_ROBOT_YOUTUBE_URL_HERE)**
+
+---
+
 ###  Technical Proficiency
 * **Programming:** C/C++, Python (PyTorch, OpenCV), MATLAB/Simulink, LabVIEW, ROS (Basic)
 * **Engineering Tools:** Altium Designer, Creo, SolidWorks, Arduino, Visual Studio/VS Code
