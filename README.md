@@ -149,7 +149,7 @@
         <img src="assets/robot_sorting.png" alt="Autonomous Color-Sorting Robot Run">
       </a>
       <br>
-      <em>Video 4: 1st Place Run at the Robotics Competition—featuring an autonomous color-sorting robot built on a 3-Mecanum wheel chassis.</em>
+      <em>Video 4: 1st Place Run at the Robotics Competition—featuring an autonomous robot built with a 3-Mecanum wheel chassis.</em>
     </td>
     <td width="50%" align="center">
       <a href="https://youtube.com/shorts/zHiZNP-AuCE?feature=share">
