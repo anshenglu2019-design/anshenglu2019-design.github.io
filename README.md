@@ -156,7 +156,7 @@
         <img src="assets/robot_industrial.png" alt="Autonomous Industrial Robot Run">
       </a>
       <br>
-      <em>Video 5: 1st Place Run at the Industrial Robot Competition—executing complex path-following line tracking and state-machine logic.</em>
+      <em>Video 5: 1st Place Run at the Industrial Robot Competition—executing  path-following line tracking and state-machine logic.</em>
     </td>
   </tr>
 </table>
