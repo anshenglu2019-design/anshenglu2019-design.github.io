@@ -136,7 +136,7 @@
 #### **Award 1: Robotics Competition (Club/School-Based)**
 *   **Perception & Manipulation:** Integrated a specialized color sensor to scan target objects and engineered a custom 1-dimensional robotic arm mechanism to physically grab the pieces.
 *   **Navigation Logic:** Programmed autonomous closed-loop routing via LabVIEW, enabling the robot to dynamically identify the object's color and navigate directly to its corresponding color-coded drop-off zone.
-    *   **Award:** **1st Place Winner** – Robotics Competition (Dec 2023).
+*   **Award:** **1st Place Winner** – Robotics Competition (Dec 2023).
 
 #### **Award 2: Industrial Robot Competition (Nation-Based)**
 *   **Logic Execution:** Implemented precise line-following, state-machine processing, and color-zone registration algorithms for complex warehouse/industrial automation tracks.
