@@ -60,7 +60,7 @@
 
 <p align="center">
   <a href="https://youtu.be/rqDFj4NV7VE"><img src="assets/robotic_arm_thumbnail.png" width="500"></a>
-  <br><em> Video 1: Hardware-in-the-loop motion control demo.(Click to watch on YouTube)</em>
+  <br><em> Video 1: Hardware-in-the-loop motion control demo. (Click to watch on YouTube)</em>
 </p>
 
 #### Cross-Functional Technical Scope:
@@ -78,7 +78,7 @@
       <a href="https://youtube.com/shorts/9p_X2iOrVEk">
         <img src="assets/led_matrix_thumbnail.png">
       </a>
-      <br><em>Video 2: LED Matrix firmware logic (Click to watch on YouTube).</em>
+      <br><em>Video 2: LED Matrix firmware logic. (Click to watch on YouTube)</em>
     </td>
   </tr>
 </table>
