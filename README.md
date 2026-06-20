@@ -144,7 +144,7 @@
 *   **Logic Execution:** Implemented precise line-following, state-machine processing, and color-zone registration algorithms for complex warehouse/industrial automation tracks.
 *   **Award:** **1st Place Winner** – 2024 Industrial Robot Competition (Mar 2024).
 
-#### **Award 3: 2024 All Ring Competition (National Finalist)**
+#### **Award 3: 2024 All Ring Competition (Nation-Based)**
 *   **Hardware Integration:** Selected as a finalist by entering and demonstrating the assembly prototype of my approved patent.
 *   **Technical Showcase:** Validated the real-time sensor processing capability of the ESP32 and MPU-6050 IMU configuration under competitive scrutiny.
 *   **Award:** **Final Shortlisted Prize** – Electrical Engineering Category, Tainan, Taiwan (Oct 2024).
