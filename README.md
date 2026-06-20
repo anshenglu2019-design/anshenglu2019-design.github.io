@@ -36,6 +36,21 @@
   <br><em>Figure 1: Inference showing worm detection and width measurement in dense scenes.</em>
 </p>
 
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <img src="assets/mealworm_raw.png" alt="Raw Mealworm Input Image">
+      <br>
+      <em>Figure 1: Raw overhead camera capture of mealworm biomass data collection.</em>
+    </td>
+    <td width="50%" align="center">
+      <img src="assets/mealworm_processed.png" alt="Processed Skeleton Tracking">
+      <br>
+      <em>Figure 2: Inference showing worm detection and width measurement in dense scenes.</em>
+    </td>
+  </tr>
+</table>
+
 <br>
 
 ### 2. FSAE Electrical Intern | Embedded Systems & Hardware | Highlander Racing, UCR
@@ -46,7 +61,7 @@
 
 <p align="center">
   <img src="assets/pcb_layout.png" width="500" alt="PCB Layout">
-  <br><em>Figure 2: Initial automated control circuit layout and trace routing in Altium Designer.</em>
+  <br><em>Figure 3: Initial automated control circuit layout and trace routing in Altium Designer.</em>
 </p>
 
 <br>
@@ -71,7 +86,7 @@
 <table align="center">
   <tr>
     <td width="50%" align="center">
-      <img src="assets/step_response.png"><br><em>Figure 3: Closed-loop feedback performance achieving a critically damped response.</em>     
+      <img src="assets/step_response.png"><br><em>Figure 4: Closed-loop feedback performance achieving a critically damped response.</em>     
     </td>
     <td width="50%" align="center">
       <a href="https://youtube.com/shorts/9p_X2iOrVEk">
@@ -98,17 +113,17 @@
     <td width="33%" align="center">
       <img src="assets/Circuit_Design.png" alt="ESP32 to MPU6050 Interface">
       <br>
-      <em>Figure 4: System Interconnect: I2C interface schematic between the ESP32 and MPU6050.</em>
+      <em>Figure 5: System Interconnect: I2C interface schematic between the ESP32 and MPU6050.</em>
     </td>
     <td width="33%" align="center">
       <img src="assets/Hardware_Architecture.png" alt="Breadboard Prototype">
       <br>
-      <em>Figure 5: Populated physical PCB and directional signaling layout.</em>
+      <em>Figure 6: Populated physical PCB and directional signaling layout.</em>
     </td>
     <td width="33%" align="center">
       <img src="assets/baton_prototype.png" alt="Physical Prototype PCB Assembly">
       <br>
-      <em>Figure 6: Breadboard prototype showcasing ESP32 and MPU6050 signal validation.</em>
+      <em>Figure 7: Breadboard prototype showcasing ESP32 and MPU6050 signal validation.</em>
     </td>
   </tr>
 </table>
