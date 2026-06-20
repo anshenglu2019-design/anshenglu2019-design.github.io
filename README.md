@@ -27,7 +27,7 @@
 
 ### 1. Undergraduate Research Assistant | Mealworm Growth Monitoring | RaMS Lab, UCR
 *Oct. 2025 - Present*
-*   **Problem:** Traditional growth monitoring involves significant time costs and manual labor measurement.
+*   **Problem:** Traditional growth monitoring involves significant time costs and manual work for measurement.
 *   **Approach:** Engineered an end-to-end **Computer Vision and Deep Learning** pipeline using an **Amodal Instance Segmentation with Transformer (AISFormer)** for mealworm detection and  width measurement for growth stage classification in high-occlusion, overlapping environments.
 *   **Insight:** Analyzed the central 90% of the object's digital skeleton using **median-width tracking**, eliminating endpoint noise and ensuring accurate measurements even when the camera view was partially blocked.
 
@@ -128,7 +128,7 @@
  **Robotics Club Member | National Yunlin University of Science & Tech (NYUST)**
 *Sep 2023 – June 2024*
 
-*   **System Development:** Collaborated with club members to program an omnidirectional mobile robot with a three-Mecanum wheel chassis.
+*   **System Development:** Programmed an omnidirectional mobile robot with a three-Mecanum wheel chassis.
 *   **Sensor Fusion & Control:** Executed sensor fusion using Ultrasonic and Color Detection sensors for obstacle avoidance and environmental interaction via LabVIEW.
 *   **Communication:** Implemented basic ROS interfacing for system communication.
 
