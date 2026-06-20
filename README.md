@@ -11,7 +11,7 @@
   <strong>Electrical Engineering student at UCR with strong passions in embedded firmware, robotics, and computer vision.</strong>
 </blockquote>
 
-##  Education & Current Works
+## Current Education & Works
 
 | Category | Details |
 | :--- | :--- |
