@@ -188,14 +188,16 @@
 ### Gravity Vector Identification | October 2024
 * **Core Competencies:** Sensor Fusion, Signal Processing, Coordinate Frame Transformations
 * **Technical Overview:** Programmed a tri-axial accelerometer processing pipeline to accurately identify the gravity vector within a body-fixed reference frame. This system successfully resolved orientation metrics relative to the vehicle's frame, establishing a reliable baseline for real-time state estimation and calibration.
+<img src="./independent-studies/gravity-vector-identification/data_plots.png" width="500" alt="Gravity Vector Data Plot">
 
-[📄 Read the Full Technical Report](./independent-studies/attitude-estimation/gravity_vector_report.pdf)
+[Read the Full Technical Report](./independent-studies/gravity-vector-identification/gravity_vector_report.pdf)
 
 ### Parametric Analysis of Mechanical | Resonance March 2025
 * **Core Competencies:** Dynamic System Modeling, Mass-Spring-Damper Systems, Vibration Analysis
 * **Technical Overview:** Conducted parametric sweeps of spring-constant variations within a mechanical shaking mechanism to evaluate energy transfer efficiency. Analyzed how structural adjustments alter system resonance frequencies and mapped corresponding power dissipation trends to optimize energy throughput.
+<img src="./independent-studies/resonance-analysis/data_plots.png" width="500" alt="Data plot of the relationship between Spring Constant and Power Consumption at a fixed frequency">
 
-[📄 Read the Full Technical Report](./independent-studies/attitude-estimation/gravity_vector_report.pdf)
+[Read the Full Technical Report](./independent-studies/resonance-analysis/gravity_vector_report.pdf)
 
 ---
 
