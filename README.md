@@ -27,9 +27,9 @@
 
 ### 1. Undergraduate Research Assistant | Mealworm Growth Monitoring | RaMS Lab, UCR
 *Oct. 2025 - Present*
-*   **Problem:** Traditional growth monitoring involves manual labor and significant time-costs.
-*   **Approach:** Engineered an end-to-end **Computer Vision and Deep Learning** pipeline using an **Amodal Instance Segmentation Transformer (AISFormer)** for mealworm detection and growth width measurement for classification in high-occlusion, overlapping environments.
-*   **Insight:** Shifting to **median-width statistical modeling** across the skeleton’s central 90% provides local invariance to partial occlusion and eliminates head/tail noise.
+*   **Problem:** Traditional growth monitoring involves significant time costs and manual labor measurement.
+*   **Approach:** Engineered an end-to-end **Computer Vision and Deep Learning** pipeline using an **Amodal Instance Segmentation with Transformer (AISFormer)** for mealworm detection and  width measurement for growth stage classification in high-occlusion, overlapping environments.
+*   **Insight:** Analyzed the central 90% of the object's digital skeleton using **median-width tracking**, eliminating endpoint noise and ensuring accurate measurements even when the camera view was partially blocked.
 
 <p align="center">
   <img src="assets/inference_result.jpg" width="500" alt="ML Inference Result">
