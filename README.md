@@ -31,20 +31,16 @@
 *   **Approach:** Engineered an end-to-end **Computer Vision and Deep Learning** pipeline using an **Amodal Instance Segmentation with Transformer (AISFormer)** for mealworm detection and  width measurement for growth stage classification in high-occlusion, overlapping environments.
 *   **Insight:** Analyzed the central 90% of the object's digital skeleton using **median-width tracking**, eliminating endpoint noise and ensuring accurate measurements even when the camera view was partially blocked.
 
-<p align="center">
-  <img src="assets/inference_result.jpg" width="500" alt="ML Inference Result">
-  <br><em>Figure 1: Inference showing worm detection and width measurement in dense scenes.</em>
-</p>
 
 <table>
   <tr>
     <td width="50%" align="center">
-      <img src="assets/mealworm_raw.png" alt="Raw Mealworm Input Image">
+      <img src="assets/mealworm_raw.jpg" alt="Raw Mealworm Input Image">
       <br>
       <em>Figure 1: Raw overhead camera capture of mealworm biomass data collection.</em>
     </td>
     <td width="50%" align="center">
-      <img src="assets/mealworm_processed.png" alt="Processed Skeleton Tracking">
+      <img src="assets/inference_result.jpg" width="500" alt="ML Inference Result">
       <br>
       <em>Figure 2: Inference showing worm detection and width measurement in dense scenes.</em>
     </td>
