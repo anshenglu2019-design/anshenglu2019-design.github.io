@@ -64,7 +64,7 @@
 ### 3. Robotics Intern | Mechatronic Systems Development | German Aerospace Center - DLR, Germany
 *August 2024*
 *   **Problem:** Achieving stable, predictable trajectory tracking in physical robotic systems.
-*   **Approach:** Integrated an **OpenManipulator-X** arm; customized a rail system with **3D-printed structural interfaces** to extend the platform's workspace.
+*   **Approach:** Integrated a **ROBOTIS OpenManipulator-X** arm; customized a rail system with **3D-printed structural interfaces** to extend the platform's workspace.
 *   **Insight:** Achieving stable motion required implementing custom control loops to manipulate physical parts; programmed the system to execute complex trajectory tracking.
 
 <p align="center">
