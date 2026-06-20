@@ -185,15 +185,17 @@
 
 ## Independent Academic Studies
 
-### Gravity Vector Identification
-* **Timeline:** October 2024
+### Gravity Vector Identification | October 2024
 * **Core Competencies:** Sensor Fusion, Signal Processing, Coordinate Frame Transformations
 * **Technical Overview:** Programmed a tri-axial accelerometer processing pipeline to accurately identify the gravity vector within a body-fixed reference frame. This system successfully resolved orientation metrics relative to the vehicle's frame, establishing a reliable baseline for real-time state estimation and calibration.
 
-### Parametric Analysis of Mechanical Resonance
-* **Timeline:** March 2025
+[📄 Read the Full Technical Report](./independent-studies/attitude-estimation/gravity_vector_report.pdf)
+
+### Parametric Analysis of Mechanical | Resonance March 2025
 * **Core Competencies:** Dynamic System Modeling, Mass-Spring-Damper Systems, Vibration Analysis
 * **Technical Overview:** Conducted parametric sweeps of spring-constant variations within a mechanical shaking mechanism to evaluate energy transfer efficiency. Analyzed how structural adjustments alter system resonance frequencies and mapped corresponding power dissipation trends to optimize energy throughput.
+
+[📄 Read the Full Technical Report](./independent-studies/attitude-estimation/gravity_vector_report.pdf)
 
 ---
 
