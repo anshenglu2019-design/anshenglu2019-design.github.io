@@ -134,20 +134,21 @@
 
 ---
 
-###  **Competitions & Awards**
+##  Competitions & Awards
 #### **Award 1: Robotics Competition (Club/School-Based)**
-*   **Perception & Manipulation:** Integrated a specialized color sensor to scan target objects and engineered a custom 1-dimensional robotic arm mechanism to physically grab the pieces.
-*   **Navigation Logic:** Programmed autonomous closed-loop routing via LabVIEW, enabling the robot to dynamically identify the object's color and navigate directly to its corresponding color-coded drop-off zone.
+*   **Perception & Manipulation:** Integrated a specialized color sensor to scan target objects and developed a custom 1-DOF pivoting arm mechanism for automated object acquisition.
+*   **Navigation Logic:** Programmed autonomous routing via LabVIEW, enabling the robot to dynamically identify the object's color and navigate directly to its corresponding color-coded drop-off zone.
 *   **Award:** **1st Place Winner** – Robotics Competition (Dec 2023).
 
 #### **Award 2: Industrial Robot Competition (Nation-Based)**
+*   **Perception & Manipulation:** Integrated a specialized color sensor to scan the target object.
 *   **Logic Execution:** Implemented precise line-following, state-machine processing, and color-zone registration algorithms for complex warehouse/industrial automation tracks.
 *   **Award:** **1st Place Winner** – 2024 Industrial Robot Competition (Mar 2024).
 
 #### **Award 3: 2024 All Ring Competition (Nation-Based)**
 *   **Hardware Integration:** Selected as a finalist by entering and demonstrating the assembly prototype of my approved patent.
 *   **Technical Showcase:** Validated the real-time sensor processing capability of the ESP32 and MPU-6050 IMU configuration under competitive scrutiny.
-*   **Award:** **Final Shortlisted Prize** – Electrical Engineering Category, Tainan, Taiwan (Oct 2024).
+*   **Award:** **Final Shortlisted Prize** – All Ring Competition - Electrical Engineering Category (Oct 2024).
 
 ---
 
