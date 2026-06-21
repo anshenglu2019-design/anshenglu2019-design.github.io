@@ -195,7 +195,7 @@
 
 [Read the Full Technical Report](assets/gravity_vector_report.pdf)
 
-### Parametric Analysis of Mechanical | Resonance March 2025
+### Parametric Analysis of Mechanical Resonance | March 2025
 * **Core Competencies:** Dynamic System Modeling, Mass-Spring-Damper Systems, Vibration Analysis
 * **Technical Overview:** Conducted parametric sweeps of spring-constant variations within a mechanical shaking mechanism to evaluate energy transfer efficiency. Analyzed how structural adjustments alter system resonance frequencies and mapped corresponding power dissipation trends to optimize energy throughput.
 <p align="center">
