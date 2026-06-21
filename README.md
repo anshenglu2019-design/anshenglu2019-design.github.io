@@ -195,7 +195,7 @@
 ### Parametric Analysis of Mechanical | Resonance March 2025
 * **Core Competencies:** Dynamic System Modeling, Mass-Spring-Damper Systems, Vibration Analysis
 * **Technical Overview:** Conducted parametric sweeps of spring-constant variations within a mechanical shaking mechanism to evaluate energy transfer efficiency. Analyzed how structural adjustments alter system resonance frequencies and mapped corresponding power dissipation trends to optimize energy throughput.
-<img src="./independent-studies/resonance-analysis/data_plots.png" width="500" alt="Data plot of the relationship between Spring Constant and Power Consumption at a fixed frequency">
+<img src="assets/data_plots.png" width="500" alt="Data plot of the relationship between Spring Constant and Power Consumption at a fixed frequency">
 
 [Read the Full Technical Report](./independent-studies/resonance-analysis/gravity_vector_report.pdf)
 
