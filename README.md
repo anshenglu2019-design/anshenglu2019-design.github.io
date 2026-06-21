@@ -8,7 +8,7 @@
 </div>
 
 <blockquote>
-  <strong>Electrical Engineering student at UCR with strong passions in embedded firmware, robotics, and computer vision.</strong>
+  <strong>Electrical Engineering student at UCR with strong passions in embedded firmware, robotics, computer vision, and deep learning.</strong>
 </blockquote>
 
 ## Current Education & Works
