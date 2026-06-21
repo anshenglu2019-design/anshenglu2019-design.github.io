@@ -187,7 +187,7 @@
 
 ### Gravity Vector Identification | October 2024
 * **Core Competencies:** Sensor Fusion, Signal Processing, Coordinate Frame Transformations
-* **Technical Overview:** Programmed a tri-axial accelerometer processing pipeline to accurately identify the gravity vector within a body-fixed reference frame. This system successfully resolved orientation metrics relative to the vehicle's frame, establishing a reliable baseline for real-time state estimation and calibration.
+* **Technical Overview:** Programmed a tri-axial accelerometer processing pipeline to identify the gravity vector within a body-fixed reference frame accurately. This system successfully resolved orientation metrics relative to the vehicle's frame, establishing a reliable baseline for real-time state estimation and calibration.
 <p align="center">
   <img src="assets/MATH_data_plots.png" width="500" alt="Gravity Vector Data Plot">
   <br><em>Figure 8: Data plot of the relationship between Spring Constant and Power Consumption at a fixed frequency in a shaking device.</em>
