@@ -30,6 +30,7 @@
 *   **Problem:** Traditional growth monitoring involves significant time costs and manual work for measurement.
 *   **Approach:** Engineered an end-to-end **Computer Vision and Deep Learning** pipeline using an **Amodal Instance Segmentation with Transformer (AISFormer)** for mealworm detection and  width measurement for growth stage classification in high-occlusion, overlapping environments.
 *   **Insight:** Analyzed the central 90% of the object's digital skeleton using **median-width tracking**, eliminating endpoint noise and ensuring accurate measurements even when the camera view was partially blocked.
+*   **For More Detail:** [View GitHub Repository](https://github.com/anshenglu2019-design/biomass-cv-pipeline)
 
 <table>
   <tr>
