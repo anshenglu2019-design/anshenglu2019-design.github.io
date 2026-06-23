@@ -1,1 +1,189 @@
+# Amodal Instance Segmentation Pipeline for Mealworm Growth Monitoring
+
+> **Repository Notice:** The core source code, model weights, and underlying datasets for this pipeline are proprietary assets maintained within a private institutional repository for laboratory handoff and ongoing research. This public workspace serves as an architectural blueprint, deployment specification, and visual portfolio showcasing the system's engineering methodology and performance results.
+
+This repository houses the computer vision and automated data processing pipeline for larval growth tracking of the mealworm (*Tenebrio molitor*). Industrial insect farming requires transitioning from manual handling to automated robotic rearing systems driven by computer vision.
+
+A critical bottleneck is larval growth tracking to optimize feeding and predict harvest readiness. Traditional computer vision metrics fail in high-density farm environments because larvae heavily cluster and occlude one another. This project advances the amodal framework by developing a computer vision pipeline prioritizing larval width measurement over length, as body width remains visible under occlusion to provide a robust metric for developmental instar classification.
+
+---
+
+## System Architecture & Methodology
+
+The software framework executes across four primary tasks:
+
+```
+┌─────────────────────────┐     ┌─────────────────────────┐     ┌─────────────────────────┐     ┌─────────────────────────┐
+│ 1. Instance Extraction  │ ──> │ 2. Synthetic Generation │ ──> │ 3. Width Measuring      │ ──> │ 4. Chart & Evaluation   │
+│  - HSV/BGR Segmentation │     │  - Cluster Compositing  │     │  - Skeletonization      │     │  - Growth Tracking      │
+│  - Isolate Clean Larvae │     │  - AISFormer Training   │     │  - Z-Score Filtering    │     │  - Mean Absolute Error  │
+└─────────────────────────┘     └─────────────────────────┘     └─────────────────────────┘     └─────────────────────────┘
+```
+
+---
+
+## Comprehensive Pipeline & Implementation Details
+
+The software framework is executed sequentially across the following six detailed engineering phases:
+
+### 1. Instance Extraction & Clean Views
+* **Objective:** Isolate high-fidelity, non-occluded larval instances to serve as the baseline assets for data augmentation.
+* **Implementation:** Raw overhead images of sparse trays are processed using a localized thresholding pipeline. Color-space transformations (converting BGR to HSV) isolate the unique color profile of the larvae from the background grid. Contours are filtered by area to discard background debris, extracting individual, clean larval masks.
+* **Key Scripts:** `/src/extract_instances.py`, `/src/crop_background.py`
+
+---
+
+### 2. Synthetic Scene Generation
+* **Objective:** Mathematically simulate complex, high-density environments to bypass manual annotation bottlenecks.
+* **Implementation:** Using a synthetic rendering paradigm, the clean larval masks extracted in Phase 1 undergo randomized affine transformations (rotation, scaling, shearing). These augmented instances are algorithmically composited onto real, empty tray background textures. The generation script explicitly dictates and varies larval crowd density, cluster patterns, and artificial lighting/shadow blending to mimic real-world occlusions. In addition, the system automatically writes bounding boxes and amodal segmentations. The script compiles these matrices and saves them directly into standard COCO object detection format, outputting full visible and occluded polygon arrays without requiring manual labeling.
+* **Dataset Complexity Tiers:**  To accurately replicate the non-linear occlusion distributions inherent in live biological cohorts, the synthetic generation pipeline outputs a stratified training set divided into three distinct density and occlusion difficulty tiers (Easy / Medium / Hard). Rather than a homogeneous distribution, each tier programmatically enforces localized physical bounds on the model's structural generalization:
+
+<div align="center">
+
+| Dataset Tier | Train Images | Validation Images | Larvae Density (Count) | Max Occlusion ($o_{\text{max}}$) |
+| :--- | :---: | :---: | :---: | :---: |
+| **Easy** | 800 | 200 | 60 | 15% |
+| **Medium** | 800 | 200 | 90 | 25% |
+| **Hard** | 800 | 200 | 120 | 45% |
+
+</div>
+
+* **Key Scripts:** `/src/generate_amodal_dataset.py`
+
+---
+
+### 3. Train Amodal Instance Segmentation (AIS) Model
+* **Objective:** Train deep learning architectures capable of predicting complete larval shapes despite overlapping clusters.
+* **Implementation:** The synthetic dataset trains amodal segmentation networks, specifically optimizing an advanced transformer-based **AISFormer** model. Training runs for a baseline of 60,000 iterations using an initial learning rate of $\eta = 0.005$, optimizing backbones to prioritize amodal mask predictions.
+* **Key Scripts:** `/src/train_mealworms_amodal.py`
+
+---
+
+### 4. Inference on Real Images & Outlier Pruning
+* **Objective:** Process raw, real-world production tray photos and apply robust statistical filtering to extract precise growth metrics.
+* **Implementation:** The trained model predicts amodal larval instances from high-resolution overhead camera feeds. To extract physical metrics, central spinal paths are traced via geometric skeletonization. To bypass tapered anatomy, the system calculates the median thickness of the central 90% of the body. Finally, a **Normal (Gaussian) Distribution Filter** checks the output data; any extreme width values generated by heavy clump noise or anomalous overlapping errors are dynamically pruned using a strict z-score threshold ($z > 2.5\sigma$).
+* **Key Scripts:** `/src/width_measure_withND_final.py`
+
+---
+
+### 5. Longitudinal Growth Tracking & Predictive Modeling
+* **Objective:** Map non-linear biological development trends and dynamically project optimal production harvest windows using filtered width metrics.
+* **Implementation:** This module standardizes heterogeneous, raw lifecycle datasets onto a chronological time-axis ($T_0 = \text{Day 0}$). It aggregates and averages multi-cohort daily measurements before executing non-linear regression fitting using a **Gompertz Growth Model**. To predict target lifecycle events (e.g., harvest readiness), the pipeline calculates an inverted algebraic matrix intersection. If a live measurement ($W_{\text{live}}$) approaches or crosses the biological asymptote plateau, a bounding cap automatically safeguards against mathematical out-of-bounds calculations, returning a precise, high-fidelity forecasting timeline.
+* **Mathematical Modeling:** The population's growth trajectory is projected using the three-parameter Gompertz sigmoidal function:
+  
+$$W_{\text{predicted}}(t) = A_{\text{max}} \cdot e^{-B \cdot e^{-C \cdot t}}$$
+  
+  Where $A$ is the asymptotic maximum width boundary, $B$ is the displacement constant, and $C$ is the specific biological growth rate parameter optimized via `scipy.optimize.curve_fit`.
+* **Key Scripts:** `src/evaluation/chart_building.py` (formerly referenced as `/src/width_measure_withND_final.py`)
+
+---
+
+### 6. Final Evaluation
+* **Objective:** Quantify the system's tracking precision across biological growth cycles.
+* **Implementation:** Overall performance will be evaluated using mean absolute error (MAE) across sampled larvae. Ultimately, this pipeline will reliably extract inlier measurements, minimize prediction error, classify biological stages, and construct longitudinal growth curves to predict the development of future batches. 
+* **Key Scripts:** `/src/evaluate_pipeline.py`
+
+---
+
+## System Layout & Components
+
+```text
+├── models/                            
+│   └── model_final.pth                # Optimized transformer weights after 60k iterations (Phase 3)
+├── output_visuals/
+│   ├── inference_result/              # Visualization of width measurement outputs (Phase 4)
+│   ├── charts/                        # Longitudinal Gompertz growth tracking charts (Phase 5)
+│   └── evaluation/                    # Model performance metrics (MAE/RMSE logs, residual plots, and error matrices) (Phase 6)
+├── data/               
+│   ├── raw/
+│   │   ├── background/                # Pure tray backgrounds containing only substrate
+│   │   └── instance/                  # Baseline photos of larvae under non-occluded conditions
+│   ├── extracted/
+│   │   ├── train_instance/            # Clean, isolated larval masks extracted in Phase 1 for training dataset in Phase 2
+│   │   ├── val_instance/              # Clean, isolated larval masks extracted in Phase 1 for validation dataset in Phase 2
+│   │   └── cropped_background/        # Clean, cropped background extracted in Phase 1
+│   ├── synthetic/                    
+│   │   ├── train_set/                
+│   │   │   ├── train_img/             # Augmented high-density training dataset generated in Phase 2 (not presented in this repository due to space limitations)
+│   │   │   └── annotations_train.json # Annotation of the training dataset generated in Phase 2 (not presented in this repository due to space limitations)
+│   │   └── val_set/                  
+│   │       ├── val_img/               # Augmented high-density validation dataset generated in Phase 2 (not presented in this repository due to space limitations)
+│   │       └── annotations_val.json   # Annotation of the validation dataset generated in Phase 2 (not presented in this repository due to space limitations)
+│   └── inference/                     # Real-world production tray images for model testing
+├── src/                
+│   ├── crop_background.py             # Phase 1: Background isolation
+│   ├── extract_instances.py           # Phase 1: Instance extraction & HSV thresholding
+│   ├── generate_amodal_dataset.py     # Phase 2: Synthetic dataset generation and COCO annotation
+│   ├── train_mealworms_amodal.py      # Phase 3: AISFormer deep learning model training
+│   ├── width_measure_withND_final.py  # Phase 4: Inference, skeletonization, and z-score filtering
+│   ├── chart_building.py              # Phase 5: Non-linear regression and predictive modeling
+│   └── evaluate_pipeline.py           # Phase 6: MAE evaluation and accuracy benchmarking
+└── requirements.txt                   # Python package dependencies
+```
+
+---
+
+## System Requirements & Core Dependencies
+
+The underlying algorithmic pipeline is designed to deploy within a containerized Linux ecosystem optimized for CUDA-accelerated computer vision tasks. 
+
+### Core Specifications
+* **Operating System:** Linux (Ubuntu 20.04 / 22.04 LTS verified)
+* **Hardware Acceleration:** NVIDIA GPU (CUDA Compute Capability 8.0+ recommended)
+* **Environment Runtime:** Python 3.8+ / Virtualenv
+
+### Key Frameworks & Dependencies
+The software stack relies on the following primary open-source distributions (detailed specifications are mapped in `requirements.txt`):
+* `torch` & `torchvision` (Deep learning framework & model optimization)
+* `opencv-python` (Real-time image manipulation & HSV/BGR color-space thresholding)
+* `numpy` (High-performance matrix manipulations for coordinate masking)
+* `scipy` (Non-linear regression optimization for Gompertz curve fitting)
+* `AISFormer` (Advanced transformer-based amodal instance segmentation architecture)
+
+---
+
+## Evaluation & Metrics
+
+To validate the computer vision system’s estimates under high-density occlusion, absolute physical ground-truth measurements are established by capturing separate, non-occluded images of individual larvae alongside a spatial calibration grid ruler. 
+
+Overall model width accuracy is quantified using **Mean Absolute Error (MAE)** across sampled validation cohorts:
+
+$$\text{MAE} = \frac{1}{n} \sum_{i=1}^{n} |W_{\text{predicted}, i} - W_{\text{ground truth}, i}|$$
+
+By accurately tracking this error margin, the pipeline continuously filters tracking anomalies, extracts pure inlier growth trends, classifies biological instar stages, and constructs reliable longitudinal growth curves for farm optimization.
+
+---
+
+## Inference Result
+
+Here is an example of how the result is visualized by the model (Phase 4).
+
+<table>
+  <tr>
+    <td width="50%" align="center" valign="bottom">
+      <img src="https://github.com/anshenglu2019-design/anshenglu2019-design.github.io/blob/main/assets/mealworm_raw.jpg" height="400" alt="Raw Mealworm Input Image">
+      <br>
+      <em>Figure 1: Raw overhead camera capture of mealworm biomass data collection.</em>
+    </td>
+    <td width="50%" align="center" valign="bottom">
+      <img src="https://github.com/anshenglu2019-design/anshenglu2019-design.github.io/blob/main/assets/inference_result.jpg" height="400" alt="ML Inference Result">
+      <br>
+      <em>Figure 2: Inference showing worm detection and width measurement in dense scenes.</em>
+    </td>
+  </tr>
+</table>
+
+---
+
+<div class="references-section">
+        <h2> References</h2>
+        
+ <div class="reference-item">
+            [1] Nawoya, S., et al. (2024). Computer vision and deep learning in insects for food and feed production: A review. <i>Computers and Electronics in Agriculture</i>, 216, 108503.
+        </div>
+        
+ <div class="reference-item">
+            [2] Dolata, P., et al. (2025). Amodal Instance Segmentation for Mealworm Growth Monitoring Using Synthetic Training Images. <i>IEEE Access</i>, 13, 52157-52175.
+        </div>
+    </div>
 
