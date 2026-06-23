@@ -88,10 +88,12 @@ $$W_{\text{predicted}}(t) = A_{\text{max}} \cdot e^{-B \cdot e^{-C \cdot t}}$$
 ## System Layout & Components
 
 ```text
+├── models/                            
+│   └── model_final.pth                # Optimized transformer weights after 60k iterations (Phase 3)
 ├── output_visuals/
-│   ├── charts/                        # Longitudinal Gompertz growth tracking charts
-│   ├── evaluation/                    # Model performance metrics (MAE/RMSE logs, residual plots, and error matrices)
-│   └── inference_result/              # Visualization of width measurement outputs
+│   ├── inference_result/              # Visualization of width measurement outputs (Phase 4)
+│   ├── charts/                        # Longitudinal Gompertz growth tracking charts (Phase 5)
+│   └── evaluation/                    # Model performance metrics (MAE/RMSE logs, residual plots, and error matrices) (Phase 6)
 ├── data/               
 │   ├── raw/
 │   │   ├── background/                # Pure tray backgrounds containing only substrate
@@ -154,7 +156,7 @@ By accurately tracking this error margin, the pipeline continuously filters trac
 
 ## Inference Result
 
-Here is an example of how the result is visualized by the model (Phase 5).
+Here is an example of how the result is visualized by the model (Phase 4).
 
 <table>
   <tr>
