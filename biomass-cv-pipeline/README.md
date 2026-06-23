@@ -170,7 +170,7 @@ By accurately tracking this error margin, the pipeline continuously filters trac
 
 ## Inference Result
 
-Here is an example of how the result would be visualized by the model (Phase 5). Before running the code, make sure to change to the correct calibration value in mm/pixel. 
+Here is an example of how the result is visualized by the model (Phase 5).
 
 <table>
   <tr>
