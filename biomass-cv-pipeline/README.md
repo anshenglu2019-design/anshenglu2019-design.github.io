@@ -36,13 +36,17 @@ The software framework is executed sequentially across the following six detaile
 ### 2. Synthetic Scene Generation
 * **Objective:** Mathematically simulate complex, high-density environments to bypass manual annotation bottlenecks.
 * **Implementation:** Using a synthetic rendering paradigm, the clean larval masks extracted in Phase 1 undergo randomized affine transformations (rotation, scaling, shearing). These augmented instances are algorithmically composited onto real, empty tray background textures. The generation script explicitly dictates and varies larval crowd density, cluster patterns, and artificial lighting/shadow blending to mimic real-world occlusions. In addition, the system automatically writes bounding boxes and amodal segmentations. The script compiles these matrices and saves them directly into standard COCO object detection format, outputting full visible and occluded polygon arrays without requiring manual labeling.
-* **Dataset Complexity Tiers:** To accurately replicate the diverse structure of occlusions found in real-world physical data, the dataset contains three levels that are classified by the number of worms and the occlusion level. The synthetic generation script outputs a stratified dataset divided into three distinct difficulty tiers:
+* **Dataset Complexity Tiers:**  To accurately replicate the non-linear occlusion distributions inherent in live biological cohorts, the synthetic generation pipeline outputs a stratified training set divided into three distinct density and occlusion difficulty tiers (Easy / Medium / Hard). Rather than a homogeneous distribution, each tier programmatically enforces localized physical bounds:
+
+<div align="center">
 
 | Dataset Tier | Train Images | Validation Images | Larvae Density (Count) | Max Occlusion ($o_{\text{max}}$) |
 | :--- | :---: | :---: | :---: | :---: |
 | **Easy** | 800 | 200 | 60 | 15% |
 | **Medium** | 800 | 200 | 90 | 25% |
 | **Hard** | 800 | 200 | 120 | 45% |
+
+</div>
 
 * **Key Scripts:** `/src/generate_amodal_dataset.py`
 
