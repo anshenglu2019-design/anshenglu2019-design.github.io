@@ -109,50 +109,22 @@ $$W_{\text{predicted}}(t) = A_{\text{max}} \cdot e^{-B \cdot e^{-C \cdot t}}$$
 
 ---
 
-## Getting Started (Linux Setup)
+## System Requirements & Core Dependencies
 
-### Prerequisites
+The underlying algorithmic pipeline is designed to deploy within a containerized Linux ecosystem optimized for CUDA-accelerated computer vision tasks. 
 
-- **OS:** Linux (Ubuntu 20.04/22.04 recommended)
-- **Hardware:** NVIDIA GPU (CUDA compatible for PyTorch acceleration)
-- **Environment:** Python 3.8+, Virtualenv
+### Core Specifications
+* **Operating System:** Linux (Ubuntu 20.04 / 22.04 LTS verified)
+* **Hardware Acceleration:** NVIDIA GPU (CUDA Compute Capability 8.0+ recommended)
+* **Environment Runtime:** Python 3.8+ / Virtualenv
 
-### Installation & Environment Setup
-
-1. Clone the repository:
-
-   ```bash
-   git clone [https://github.com/anshenglu2019-design/biomass-cv-pipeline.git](https://github.com/anshenglu2019-design/biomass-cv-pipeline.git)
-   cd biomass-cv-pipeline
-   ```
-
-2. Set up a Python Virtual Environment:
-
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate
-   ```
-
-3. Install Dependencies:
-
-   ```bash
-   pip install --upgrade pip
-   pip install -r requirements.txt
-   ```
-4. Install AISFormer Architecture:
-
-   ```bash
-   # Clone the tracking repository into your workspace
-   git clone [https://github.com/mabh606/AISFormer.git](https://github.com/mabh606/AISFormer.git)
-   cd AISFormer
-
-   # Install in editable mode for research development
-   pip install -e .
-   cd ..
-   ```
-
-
-
+### Key Frameworks & Dependencies
+The software stack relies on the following primary open-source distributions (detailed specifications are mapped in `requirements.txt`):
+* `torch` & `torchvision` (Deep learning framework & model optimization)
+* `opencv-python` (Real-time image manipulation & HSV/BGR color-space thresholding)
+* `numpy` (High-performance matrix manipulations for coordinate masking)
+* `scipy` (Non-linear regression optimization for Gompertz curve fitting)
+* `AISFormer` (Advanced transformer-based amodal instance segmentation architecture)
 
 ---
 
