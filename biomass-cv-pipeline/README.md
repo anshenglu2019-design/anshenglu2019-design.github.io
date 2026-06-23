@@ -36,6 +36,14 @@ The software framework is executed sequentially across the following six detaile
 ### 2. Synthetic Scene Generation
 * **Objective:** Mathematically simulate complex, high-density environments to bypass manual annotation bottlenecks.
 * **Implementation:** Using a synthetic rendering paradigm, the clean larval masks extracted in Phase 1 undergo randomized affine transformations (rotation, scaling, shearing). These augmented instances are algorithmically composited onto real, empty tray background textures. The generation script explicitly dictates and varies larval crowd density, cluster patterns, and artificial lighting/shadow blending to mimic real-world occlusions. In addition, the system automatically writes bounding boxes and amodal segmentations. The script compiles these matrices and saves them directly into standard COCO object detection format, outputting full visible and occluded polygon arrays without requiring manual labeling.
+* **Dataset Complexity Tiers:** To accurately replicate the diverse structure of occlusions found in real-world physical data, the dataset contains three levels that are classified by the number of worms and the occlusion level. The synthetic generation script outputs a stratified dataset divided into three distinct difficulty tiers:
+
+| Dataset Tier | Train Images | Validation Images | Larvae Density (Count) | Max Occlusion ($o_{\text{max}}$) |
+| :--- | :---: | :---: | :---: | :---: |
+| **Easy** | 800 | 200 | 60 | 15% |
+| **Medium** | 800 | 200 | 90 | 25% |
+| **Hard** | 800 | 200 | 120 | 45% |
+
 * **Key Scripts:** `/src/generate_amodal_dataset.py`
 
 ---
@@ -69,11 +77,11 @@ $$W_{\text{predicted}}(t) = A_{\text{max}} \cdot e^{-B \cdot e^{-C \cdot t}}$$
 ### 6. Final Evaluation
 * **Objective:** Quantify the system's tracking precision across biological growth cycles.
 * **Implementation:** Overall performance will be evaluated using mean absolute error (MAE) across sampled larvae. Ultimately, this pipeline will reliably extract inlier measurements, minimize prediction error, classify biological stages, and construct longitudinal growth curves to predict the development of future batches. 
-* **Key Scripts:** `/src/evaluate_pipeline.py` (developing)
+* **Key Scripts:** `/src/evaluate_pipeline.py`
 
 ---
 
-## Repository Structure
+## System Layout & Components
 
 ```text
 ├── output_visuals/
