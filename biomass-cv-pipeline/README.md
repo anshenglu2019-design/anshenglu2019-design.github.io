@@ -111,7 +111,7 @@ $$W_{\text{predicted}}(t) = A_{\text{max}} \cdot e^{-B \cdot e^{-C \cdot t}}$$
 ├── src/                
 │   ├── crop_background.py             # Phase 1: Background isolation
 │   ├── extract_instances.py           # Phase 1: Instance extraction & HSV thresholding
-│   ├── generate_amodal_dataset.py     # Phase 2: Synthetic generation and COCO annotation
+│   ├── generate_amodal_dataset.py     # Phase 2: Synthetic dataset generation and COCO annotation
 │   ├── train_mealworms_amodal.py      # Phase 3: AISFormer deep learning model training
 │   ├── width_measure_withND_final.py  # Phase 4: Inference, skeletonization, and z-score filtering
 │   ├── chart_building.py              # Phase 5: Non-linear regression and predictive modeling
