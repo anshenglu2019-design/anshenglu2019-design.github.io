@@ -1,6 +1,6 @@
 # Amodal Instance Segmentation Pipeline for Mealworm Growth Monitoring
 
-> 🔒 **Repository Notice:** The core source code, model weights, and underlying datasets for this pipeline are proprietary assets maintained within a private institutional repository for laboratory handoff and ongoing research. This public workspace serves as an architectural blueprint, deployment specification, and visual portfolio showcasing the system's engineering methodology and performance results.
+> **Repository Notice:** The core source code, model weights, and underlying datasets for this pipeline are proprietary assets maintained within a private institutional repository for laboratory handoff and ongoing research. This public workspace serves as an architectural blueprint, deployment specification, and visual portfolio showcasing the system's engineering methodology and performance results.
 
 This repository houses the computer vision and automated data processing pipeline for larval growth tracking of the mealworm (*Tenebrio molitor*). Industrial insect farming requires transitioning from manual handling to automated robotic rearing systems driven by computer vision.
 
