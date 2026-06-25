@@ -29,7 +29,7 @@
 *Oct. 2025 - Present*
 *   **Problem:** Traditional growth monitoring involves significant time costs and manual work for measurement.
 *   **Approach:** Engineered an end-to-end **Computer Vision and Deep Learning** pipeline using an **Amodal Instance Segmentation with Transformer (AISFormer)** for mealworm detection and  width measurement for growth stage classification in high-occlusion, overlapping environments.
-*   **Insight:** Analyzed the central 90% of the object's digital skeleton using **median-width tracking**, eliminating endpoint noise and ensuring accurate measurements even when the camera view was partially blocked.
+*   **Insight:** Engineered a skeleton-based width measurement using distance-transform radius profiling, isolating the mid-body thickness via top-quantile filtering to eliminate tapered-end and occlusion noise, then applied a normal-distribution z-score filter (>2.5σ) for outlier pruning.
 *   **For More Detail:** [View My GitHub Repository](archive/cv-pipeline/README.md)
 
 <table>
