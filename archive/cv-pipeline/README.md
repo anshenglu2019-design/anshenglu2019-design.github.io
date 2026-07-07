@@ -74,14 +74,14 @@ The software framework is executed sequentially across the following six detaile
 $$W_{\text{predicted}}(t) = A_{\text{max}} \cdot e^{-B \cdot e^{-C \cdot t}}$$
   
   Where $A$ is the asymptotic maximum width boundary, $B$ is the displacement constant, and $C$ is the specific biological growth rate parameter optimized via `scipy.optimize.curve_fit`.
-* **Key Scripts:** `src/evaluation/chart_building.py` (formerly referenced as `/src/width_measure_withND_final.py`)
+* **Key Scripts:** `src/chart_building.py` (formerly referenced as `/src/width_measure_withND_final.py`)
 
 ---
 
 ### 6. Final Evaluation
 * **Objective:** Quantify the system's tracking precision across biological growth cycles.
-* **Implementation:** Overall performance will be evaluated using mean absolute error (MAE) across sampled larvae. Ultimately, this pipeline will reliably extract inlier measurements, minimize prediction error, classify biological stages, and construct longitudinal growth curves to predict the development of future batches. 
-* **Key Scripts:** `/src/evaluate_pipeline.py`
+* **Implementation:** The ground truth width will be measured for further model evaluation. Overall performance will be evaluated using mean absolute error (MAE) across sampled larvae. Ultimately, this pipeline will reliably extract inlier measurements, minimize prediction error, classify biological stages, and construct longitudinal growth curves to predict the development of future batches. 
+* **Key Scripts:** `/src/evaluate_pipeline.py`, `/src/gt_measure.py`
 
 ---
 
@@ -117,6 +117,7 @@ $$W_{\text{predicted}}(t) = A_{\text{max}} \cdot e^{-B \cdot e^{-C \cdot t}}$$
 │   ├── train_mealworms_amodal.py      # Phase 3: AISFormer deep learning model training
 │   ├── width_measure_withND_final.py  # Phase 4: Inference, skeletonization, and z-score filtering
 │   ├── chart_building.py              # Phase 5: Non-linear regression and predictive modeling
+│   ├── gt_measure.py                  # Phase 6: Ground truth measurement
 │   └── evaluate_pipeline.py           # Phase 6: MAE evaluation and accuracy benchmarking
 └── requirements.txt                   # Python package dependencies
 ```
