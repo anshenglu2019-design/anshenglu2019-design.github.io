@@ -7,6 +7,7 @@
   <title>An-Sheng (Anson) Lu | Electrical Engineering Portfolio</title>
 
   <style>
+    /* CSS Variables & Light Theme */
     :root {
       --bg: #f6f8fb;
       --surface: #ffffff;
@@ -23,6 +24,38 @@
       --max: 1120px;
     }
 
+    /* Automatic Dark Mode Support */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b1120;
+        --surface: #1e293b;
+        --surface-2: #0f172a;
+        --text: #f8fafc;
+        --muted: #94a3b8;
+        --line: #334155;
+        --accent: #3b82f6;
+        --accent-dark: #60a5fa;
+        --accent-soft: #1e3a8a;
+        --dark: #020617;
+        --shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+      }
+      
+      .hero {
+        background: radial-gradient(circle at 85% 20%, rgba(59, 130, 246, 0.15), transparent 30%),
+                    radial-gradient(circle at 10% 10%, rgba(14, 165, 233, 0.1), transparent 25%);
+      }
+      
+      .nav-wrap {
+        background: rgba(11, 17, 32, 0.88);
+        border-bottom: 1px solid rgba(51, 65, 85, 0.85);
+      }
+      
+      .button { background: var(--surface-2); color: var(--text); }
+      .button:hover { background: var(--surface); }
+      .hero-description { color: #cbd5e1; }
+      .detail p { color: #cbd5e1; }
+    }
+
     * { box-sizing: border-box; }
 
     html { scroll-behavior: smooth; }
@@ -34,21 +67,34 @@
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
         "Segoe UI", sans-serif;
       line-height: 1.65;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
 
     a {
       color: inherit;
       text-decoration: none;
+      transition: color 0.2s ease;
     }
 
     img {
       display: block;
       max-width: 100%;
+      border-radius: 8px;
     }
 
     .container {
       width: min(calc(100% - 40px), var(--max));
       margin: 0 auto;
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate-up {
+      animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     }
 
     /* Navigation */
@@ -59,6 +105,7 @@
       background: rgba(246, 248, 251, 0.88);
       backdrop-filter: blur(16px);
       border-bottom: 1px solid rgba(223, 229, 236, 0.85);
+      transition: background-color 0.3s ease;
     }
 
     nav {
@@ -73,11 +120,10 @@
       font-weight: 800;
       letter-spacing: -0.03em;
       white-space: nowrap;
+      font-size: 1.1rem;
     }
 
-    .brand span {
-      color: var(--accent);
-    }
+    .brand span { color: var(--accent); }
 
     .nav-links {
       display: flex;
@@ -85,25 +131,31 @@
       gap: 24px;
       font-size: 0.9rem;
       color: var(--muted);
+      font-weight: 500;
     }
 
-    .nav-links a:hover {
-      color: var(--accent);
-    }
+    .nav-links a:hover { color: var(--accent); }
 
     .nav-resume {
-      padding: 9px 14px;
+      padding: 9px 16px;
       border-radius: 10px;
-      background: var(--dark);
+      background: var(--accent);
       color: white !important;
+      font-weight: 600;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+    
+    .nav-resume:hover {
+      background: var(--accent-dark);
+      transform: translateY(-1px);
     }
 
     /* Hero */
     .hero {
-      padding: 92px 0 74px;
+      padding: 100px 0 80px;
       background:
-        radial-gradient(circle at 85% 20%, rgba(37, 99, 235, 0.12), transparent 30%),
-        radial-gradient(circle at 10% 10%, rgba(14, 165, 233, 0.08), transparent 25%);
+        radial-gradient(circle at 85% 20%, rgba(37, 99, 235, 0.08), transparent 35%),
+        radial-gradient(circle at 10% 10%, rgba(14, 165, 233, 0.05), transparent 30%);
     }
 
     .hero-grid {
@@ -140,15 +192,14 @@
       max-width: 800px;
     }
 
-    .hero h1 span {
-      color: var(--accent);
-    }
+    .hero h1 span { color: var(--accent); }
 
     .hero-subtitle {
       margin: 22px 0 0;
       font-size: clamp(1.1rem, 2vw, 1.35rem);
       color: var(--muted);
       max-width: 680px;
+      font-weight: 500;
     }
 
     .hero-description {
@@ -160,27 +211,28 @@
     .hero-actions {
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 28px;
+      gap: 14px;
+      margin-top: 32px;
     }
 
     .button {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-height: 44px;
-      padding: 0 17px;
-      border-radius: 11px;
+      min-height: 46px;
+      padding: 0 20px;
+      border-radius: 12px;
       border: 1px solid var(--line);
       background: var(--surface);
-      font-weight: 700;
-      font-size: 0.92rem;
-      transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: all .2s ease;
     }
 
     .button:hover {
       transform: translateY(-2px);
       box-shadow: var(--shadow);
+      border-color: var(--accent);
     }
 
     .button.primary {
@@ -189,14 +241,26 @@
       border-color: var(--accent);
     }
 
-    .button.primary:hover { background: var(--accent-dark); }
+    .button.primary:hover { 
+      background: var(--accent-dark); 
+      color: white;
+    }
 
     .hero-card {
       background: var(--dark);
       color: white;
-      padding: 26px;
-      border-radius: 22px;
+      padding: 32px;
+      border-radius: 24px;
       box-shadow: 0 25px 60px rgba(11, 18, 32, 0.18);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .hero-card::after {
+      content: "";
+      position: absolute;
+      top: 0; right: 0; width: 150px; height: 150px;
+      background: radial-gradient(circle, rgba(59,130,246,0.2) 0%, transparent 70%);
     }
 
     .hero-card-label {
@@ -208,9 +272,9 @@
     }
 
     .hero-card h2 {
-      margin: 9px 0 18px;
-      font-size: 1.45rem;
-      line-height: 1.25;
+      margin: 12px 0 20px;
+      font-size: 1.5rem;
+      line-height: 1.3;
     }
 
     .hero-card ul {
@@ -220,48 +284,52 @@
     }
 
     .hero-card li {
-      padding: 11px 0;
+      padding: 12px 0;
       border-top: 1px solid rgba(255,255,255,.12);
-      color: #d7deea;
-      font-size: 0.92rem;
+      color: #e2e8f0;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .hero-card li::before {
+      content: "▹";
+      color: #60a5fa;
     }
 
     /* Sections */
-    section {
-      padding: 82px 0;
-    }
-
-    section:nth-of-type(even) {
-      background: var(--surface);
-    }
+    section { padding: 90px 0; }
+    section:nth-of-type(even) { background: var(--surface); }
 
     .section-heading {
       display: flex;
       align-items: end;
       justify-content: space-between;
       gap: 24px;
-      margin-bottom: 34px;
+      margin-bottom: 40px;
     }
 
     .section-number {
       color: var(--accent);
-      font-size: 0.78rem;
+      font-size: 0.8rem;
       font-weight: 800;
       letter-spacing: .12em;
       text-transform: uppercase;
     }
 
     h2.section-title {
-      margin: 5px 0 0;
+      margin: 8px 0 0;
       font-size: clamp(2rem, 4vw, 3rem);
       letter-spacing: -0.045em;
-      line-height: 1.05;
+      line-height: 1.1;
     }
 
     .section-intro {
       max-width: 560px;
       color: var(--muted);
       margin: 0;
+      font-size: 1.05rem;
     }
 
     /* Overview */
@@ -271,11 +339,17 @@
       gap: 24px;
     }
 
-    .overview-card, .skill-card, .study-card {
+    .overview-card, .skill-card, .study-card, .award {
       background: var(--surface);
       border: 1px solid var(--line);
       border-radius: var(--radius);
-      padding: 26px;
+      padding: 30px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    
+    .skill-card:hover, .study-card:hover, .award:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow);
     }
 
     section:nth-of-type(even) .overview-card,
@@ -284,496 +358,203 @@
       background: var(--surface-2);
     }
 
-    .overview-table {
-      width: 100%;
-      border-collapse: collapse;
-    }
+    .overview-table { width: 100%; border-collapse: collapse; }
+    .overview-table tr + tr { border-top: 1px solid var(--line); }
+    .overview-table td { padding: 16px 0; vertical-align: top; }
+    .overview-table td:first-child { width: 30%; color: var(--muted); font-weight: 600; }
 
-    .overview-table tr + tr {
-      border-top: 1px solid var(--line);
-    }
-
-    .overview-table td {
-      padding: 15px 0;
-      vertical-align: top;
-    }
-
-    .overview-table td:first-child {
-      width: 30%;
-      color: var(--muted);
-      font-weight: 700;
-    }
-
-    .quick-stats {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-    }
-
+    .quick-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
     .stat {
-      padding: 20px;
+      padding: 24px;
       background: var(--dark);
       color: white;
-      border-radius: 14px;
+      border-radius: var(--radius);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
-
-    .stat strong {
-      display: block;
-      font-size: 1.8rem;
-      letter-spacing: -0.04em;
-    }
-
-    .stat span {
-      color: #b8c2d3;
-      font-size: .83rem;
-    }
+    .stat strong { display: block; font-size: 2rem; letter-spacing: -0.04em; color: #60a5fa; }
+    .stat span { color: #cbd5e1; font-size: .85rem; margin-top: 4px; line-height: 1.4; }
 
     /* Project cards */
-    .project-list {
-      display: grid;
-      gap: 28px;
-    }
+    .project-list { display: grid; gap: 40px; }
 
     .project-card {
       background: var(--surface);
       border: 1px solid var(--line);
-      border-radius: 22px;
+      border-radius: 24px;
       overflow: hidden;
       box-shadow: 0 5px 20px rgba(15,23,42,.035);
+      transition: box-shadow 0.3s ease;
     }
+    
+    .project-card:hover { box-shadow: var(--shadow); }
 
-    .project-content {
-      padding: 30px;
-    }
-
-    .project-top {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      align-items: start;
-    }
-
+    .project-content { padding: 36px; }
+    .project-top { display: flex; justify-content: space-between; gap: 20px; align-items: start; }
+    
     .project-index {
+      display: inline-block;
+      padding: 4px 10px;
+      background: var(--accent-soft);
       color: var(--accent);
-      font-weight: 850;
-      font-size: .78rem;
+      border-radius: 6px;
+      font-weight: 800;
+      font-size: .75rem;
       letter-spacing: .1em;
+      margin-bottom: 12px;
     }
 
-    .project-card h3 {
-      margin: 6px 0 4px;
-      font-size: 1.45rem;
-      line-height: 1.25;
-      letter-spacing: -.025em;
-    }
+    .project-card h3 { margin: 0 0 8px; font-size: 1.6rem; line-height: 1.25; letter-spacing: -.025em; }
+    .project-role { color: var(--muted); font-size: 1rem; font-weight: 500; }
+    .date { color: var(--muted); white-space: nowrap; font-size: .9rem; font-weight: 500; }
 
-    .project-role {
-      color: var(--muted);
-      font-size: .9rem;
-      font-weight: 650;
-    }
-
-    .date {
-      color: var(--muted);
-      white-space: nowrap;
-      font-size: .83rem;
-    }
-
-    .project-details {
-      margin: 22px 0 0;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-    }
-
-    .detail {
-      padding: 16px;
-      background: var(--surface-2);
-      border-radius: 13px;
-    }
-
+    .project-details { margin: 28px 0 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .detail { padding: 20px; background: var(--surface-2); border-radius: 16px; border: 1px solid var(--line); }
     .detail strong {
-      display: block;
-      margin-bottom: 5px;
-      color: var(--text);
-      font-size: .78rem;
-      text-transform: uppercase;
-      letter-spacing: .08em;
+      display: block; margin-bottom: 8px; color: var(--text);
+      font-size: .8rem; text-transform: uppercase; letter-spacing: .08em;
     }
-
-    .detail p {
-      margin: 0;
-      font-size: .9rem;
-      color: #475467;
-    }
+    .detail p { margin: 0; font-size: .95rem; color: #475467; }
 
     .project-link {
-      display: inline-flex;
-      margin-top: 20px;
-      color: var(--accent);
-      font-weight: 750;
-      font-size: .9rem;
+      display: inline-flex; margin-top: 24px; color: var(--accent);
+      font-weight: 700; font-size: .95rem; align-items: center; gap: 6px;
     }
+    .project-link:hover { color: var(--accent-dark); gap: 10px; }
 
     /* Galleries */
-    .gallery {
-      display: grid;
-      gap: 3px;
-      background: var(--line);
-    }
-
+    .gallery { display: grid; gap: 4px; background: var(--line); }
     .gallery.two { grid-template-columns: 1fr 1fr; }
     .gallery.three { grid-template-columns: repeat(3, 1fr); }
 
-    .media {
-      background: var(--surface-2);
-      overflow: hidden;
-      position: relative;
-    }
-
-    .media img {
-      width: 100%;
-      height: 320px;
-      object-fit: cover;
-      transition: transform .35s ease;
-    }
-
-    .gallery.three .media img { height: 270px; }
-
-    .media:hover img { transform: scale(1.025); }
+    .media { background: var(--surface-2); overflow: hidden; position: relative; margin: 0;}
+    .media img { width: 100%; height: 350px; object-fit: cover; transition: transform .4s ease; border-radius: 0; }
+    .gallery.three .media img { height: 280px; }
+    .media:hover img { transform: scale(1.03); }
 
     .media figcaption {
-      padding: 13px 16px;
-      background: var(--surface);
-      color: var(--muted);
-      font-size: .78rem;
-      line-height: 1.45;
+      padding: 14px 20px; background: var(--surface); color: var(--muted);
+      font-size: .85rem; line-height: 1.5; border-top: 1px solid var(--line);
     }
 
-    .video-link {
-      display: block;
-      position: relative;
-    }
-
+    .video-link { display: block; position: relative; }
     .video-link::after {
-      content: "▶";
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      width: 54px;
-      height: 54px;
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      background: rgba(11,18,32,.86);
-      color: white;
-      font-size: 1rem;
+      content: "▶"; position: absolute; left: 50%; top: 50%;
+      transform: translate(-50%, -50%); width: 64px; height: 64px;
+      border-radius: 50%; display: grid; place-items: center;
+      background: rgba(11,18,32,.86); color: white; font-size: 1.2rem;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+    .video-link:hover::after {
+      background: var(--accent); transform: translate(-50%, -50%) scale(1.1);
     }
 
     /* Patent */
     .patent-card {
-      background: var(--dark);
-      color: white;
-      border-radius: 22px;
-      padding: 34px;
-      box-shadow: 0 20px 50px rgba(11,18,32,.14);
+      background: var(--dark); color: white; border-radius: 24px; padding: 40px;
+      box-shadow: 0 20px 50px rgba(11,18,32,.2); position: relative; overflow: hidden;
     }
-
     .patent-card .section-number { color: #93c5fd; }
+    .patent-card h3 { margin: 12px 0 8px; font-size: 2rem; letter-spacing: -.03em; }
+    .patent-date { color: #94a3b8; font-size: 1rem; }
 
-    .patent-card h3 {
-      margin: 8px 0 8px;
-      font-size: 1.8rem;
-      letter-spacing: -.03em;
-    }
-
-    .patent-date {
-      color: #aebbd0;
-      font-size: .88rem;
-    }
-
-    .patent-grid {
-      margin-top: 25px;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 14px;
-    }
-
+    .patent-grid { margin-top: 32px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
     .patent-point {
-      padding: 17px;
-      background: rgba(255,255,255,.07);
-      border: 1px solid rgba(255,255,255,.1);
-      border-radius: 13px;
+      padding: 24px; background: rgba(255,255,255,.05);
+      border: 1px solid rgba(255,255,255,.1); border-radius: 16px;
     }
-
     .patent-point strong {
-      display: block;
-      color: #bfdbfe;
-      font-size: .78rem;
-      text-transform: uppercase;
-      letter-spacing: .08em;
-      margin-bottom: 5px;
+      display: block; color: #60a5fa; font-size: .8rem; text-transform: uppercase;
+      letter-spacing: .08em; margin-bottom: 8px;
     }
-
-    .patent-point p {
-      margin: 0;
-      color: #d6deeb;
-      font-size: .9rem;
-    }
-
-    .patent-link {
-      display: inline-flex;
-      margin-top: 22px;
-      color: #bfdbfe;
-      font-weight: 750;
-    }
+    .patent-point p { margin: 0; color: #e2e8f0; font-size: .95rem; }
+    .patent-link { display: inline-flex; margin-top: 28px; color: #60a5fa; font-weight: 700; }
+    .patent-link:hover { color: white; }
 
     /* Experience / awards */
-    .timeline {
-      position: relative;
-      display: grid;
-      gap: 18px;
-    }
-
+    .timeline { position: relative; display: grid; gap: 0; }
     .timeline-item {
-      display: grid;
-      grid-template-columns: 170px 1fr;
-      gap: 24px;
-      padding: 22px 0;
-      border-bottom: 1px solid var(--line);
+      display: grid; grid-template-columns: 180px 1fr; gap: 32px;
+      padding: 32px 0; border-bottom: 1px solid var(--line);
     }
+    .timeline-item:last-child { border-bottom: 0; padding-bottom: 0; }
+    
+    .timeline-date { color: var(--accent); font-weight: 700; font-size: .9rem; padding-top: 4px; }
+    .timeline h3 { margin: 0 0 8px; font-size: 1.2rem; }
+    .timeline p { margin: 6px 0; color: var(--muted); font-size: .95rem; line-height: 1.6; }
 
-    .timeline-item:last-child { border-bottom: 0; }
-
-    .timeline-date {
-      color: var(--accent);
-      font-weight: 800;
-      font-size: .82rem;
-    }
-
-    .timeline h3 {
-      margin: 0 0 6px;
-      font-size: 1.08rem;
-    }
-
-    .timeline p {
-      margin: 5px 0;
-      color: var(--muted);
-      font-size: .91rem;
-    }
-
-    .award-grid {
-      display: grid;
-      gap: 14px;
-    }
-
-    .award {
-      background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: 15px;
-      padding: 21px 23px;
-    }
-
-    .award h3 {
-      margin: 0 0 6px;
-      font-size: 1rem;
-    }
-
-    .award p {
-      margin: 5px 0;
-      color: var(--muted);
-      font-size: .89rem;
-    }
-
-    .award-result {
-      color: var(--accent) !important;
-      font-weight: 800;
-    }
+    .award-grid { display: grid; gap: 20px; }
+    .award { padding: 28px; }
+    .award h3 { margin: 0 0 10px; font-size: 1.15rem; }
+    .award p { margin: 8px 0; color: var(--muted); font-size: .95rem; }
+    .award-result { color: var(--accent) !important; font-weight: 700; margin-top: 16px !important; }
 
     /* Studies */
-    .study-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 22px;
-    }
-
-    .study-card h3 {
-      margin: 0 0 3px;
-      font-size: 1.2rem;
-    }
-
-    .study-date {
-      color: var(--accent);
-      font-size: .82rem;
-      font-weight: 750;
-    }
-
-    .study-card p {
-      color: var(--muted);
-      font-size: .9rem;
-    }
-
+    .study-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+    .study-card h3 { margin: 0 0 6px; font-size: 1.3rem; }
+    .study-date { color: var(--accent); font-size: .85rem; font-weight: 700; margin-bottom: 8px; display: inline-block;}
+    .study-card p { color: var(--muted); font-size: .95rem; }
     .study-card img {
-      width: 100%;
-      height: 220px;
-      object-fit: contain;
-      background: white;
-      border-radius: 10px;
-      margin-top: 18px;
+      width: 100%; height: 240px; object-fit: contain; background: white;
+      border-radius: 12px; margin-top: 24px; border: 1px solid var(--line);
     }
-
     .report-link {
-      display: inline-flex;
-      margin-top: 4px;
-      color: var(--accent);
-      font-weight: 750;
-      font-size: .88rem;
+      display: inline-flex; margin-top: 20px; color: var(--accent);
+      font-weight: 600; font-size: .95rem;
     }
 
     /* Skills */
-    .skills-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 22px;
-    }
-
-    .skill-card h3 {
-      margin: 0 0 14px;
-      font-size: 1rem;
-    }
-
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
+    .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+    .skill-card h3 { margin: 0 0 20px; font-size: 1.2rem; }
+    .tags { display: flex; flex-wrap: wrap; gap: 10px; }
     .tag {
-      padding: 8px 11px;
-      border-radius: 9px;
-      background: var(--surface);
-      border: 1px solid var(--line);
-      font-size: .82rem;
-      font-weight: 650;
-      color: #344054;
+      padding: 8px 14px; border-radius: 10px; background: var(--bg);
+      border: 1px solid var(--line); font-size: .85rem; font-weight: 600;
+      color: var(--text); font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      transition: all 0.2s ease;
     }
+    .tag:hover { border-color: var(--accent); color: var(--accent); background: var(--surface); }
 
     /* Footer */
-    footer {
-      background: var(--dark);
-      color: white;
-      padding: 55px 0;
-    }
-
-    .footer-grid {
-      display: flex;
-      align-items: end;
-      justify-content: space-between;
-      gap: 30px;
-    }
-
-    footer h2 {
-      margin: 0 0 7px;
-      font-size: 1.6rem;
-      letter-spacing: -.03em;
-    }
-
-    footer p {
-      margin: 0;
-      color: #aebbd0;
-    }
-
-    .footer-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
+    footer { background: var(--dark); color: white; padding: 70px 0; }
+    .footer-grid { display: flex; align-items: end; justify-content: space-between; gap: 40px; }
+    footer h2 { margin: 0 0 12px; font-size: 2rem; letter-spacing: -.03em; }
+    footer p { margin: 0; color: #94a3b8; font-size: 1.05rem; }
+    
+    .footer-links { display: flex; flex-wrap: wrap; gap: 12px; }
     .footer-links a {
-      padding: 9px 13px;
-      border: 1px solid rgba(255,255,255,.14);
-      border-radius: 9px;
-      color: #dbe4f2;
-      font-size: .83rem;
+      padding: 10px 18px; border: 1px solid rgba(255,255,255,.2);
+      border-radius: 10px; color: #f8fafc; font-size: .9rem; font-weight: 500;
+      transition: all 0.2s ease;
     }
-
-    .footer-links a:hover {
-      border-color: #60a5fa;
-      color: white;
-    }
-
+    .footer-links a:hover { border-color: #60a5fa; color: #60a5fa; background: rgba(255,255,255,.05); }
+    
     .copyright {
-      margin-top: 35px;
-      padding-top: 20px;
-      border-top: 1px solid rgba(255,255,255,.1);
-      color: #8190a7;
-      font-size: .78rem;
+      margin-top: 50px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.1);
+      color: #64748b; font-size: .85rem;
     }
 
-    @media (max-width: 850px) {
+    /* Media Queries */
+    @media (max-width: 900px) {
       .nav-links a:not(.nav-resume) { display: none; }
-
-      .hero { padding-top: 65px; }
-      .hero-grid,
-      .overview-grid,
-      .study-grid,
-      .skills-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .project-details {
-        grid-template-columns: 1fr;
-      }
-
-      .patent-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .timeline-item {
-        grid-template-columns: 1fr;
-        gap: 5px;
-      }
-
-      .section-heading {
-        display: block;
-      }
-
-      .section-intro {
-        margin-top: 12px;
-      }
+      .hero { padding: 80px 0 60px; }
+      .hero-grid, .overview-grid, .study-grid, .skills-grid { grid-template-columns: 1fr; }
+      .project-details, .patent-grid { grid-template-columns: 1fr; }
+      .timeline-item { grid-template-columns: 1fr; gap: 12px; }
+      .section-heading { display: block; }
+      .section-intro { margin-top: 16px; }
     }
 
     @media (max-width: 600px) {
-      .container { width: min(calc(100% - 28px), var(--max)); }
-
-      section { padding: 60px 0; }
-
-      h1 { font-size: 3.15rem; }
-
-      .gallery.two,
-      .gallery.three {
-        grid-template-columns: 1fr;
-      }
-
-      .media img,
-      .gallery.three .media img {
-        height: auto;
-        max-height: 340px;
-        object-fit: contain;
-      }
-
-      .quick-stats {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .footer-grid {
-        display: block;
-      }
-
-      .footer-links {
-        margin-top: 20px;
-      }
+      .container { width: min(calc(100% - 32px), var(--max)); }
+      section { padding: 70px 0; }
+      h1 { font-size: 3.2rem; }
+      .gallery.two, .gallery.three { grid-template-columns: 1fr; }
+      .media img, .gallery.three .media img { height: auto; max-height: 340px; object-fit: contain; }
+      .quick-stats { grid-template-columns: 1fr; }
+      .footer-grid { display: block; }
+      .footer-links { margin-top: 30px; }
     }
   </style>
 </head>
@@ -782,15 +563,15 @@
 
   <div class="nav-wrap">
     <div class="container">
-      <nav>
-        <a class="brand" href="#top">AN-SHENG <span>LU</span></a>
+      <nav aria-label="Main Navigation">
+        <a class="brand" href="#top" aria-label="Back to Top">AN-SHENG <span>LU</span></a>
         <div class="nav-links">
           <a href="#projects">Projects</a>
           <a href="#patent">Patent</a>
           <a href="#experience">Experience</a>
           <a href="#awards">Awards</a>
           <a href="#studies">Studies</a>
-          <a class="nav-resume" href="assets/An-Sheng_Lu_Resume.pdf" target="_blank">Resume ↗</a>
+          <a class="nav-resume" href="assets/An-Sheng_Lu_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume ↗</a>
         </div>
       </nav>
     </div>
@@ -799,7 +580,7 @@
   <main id="top">
 
     <!-- HERO -->
-    <header class="hero">
+    <header class="hero animate-up">
       <div class="container hero-grid">
         <div>
           <div class="eyebrow">Electrical Engineering · UC Riverside</div>
@@ -815,7 +596,7 @@
 
           <div class="hero-actions">
             <a class="button primary" href="#projects">Explore My Work ↓</a>
-            <a class="button" href="assets/An-Sheng_Lu_Resume.pdf" target="_blank">View Resume</a>
+            <a class="button" href="assets/An-Sheng_Lu_Resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
             <a class="button" href="mailto:anshenglu2019@gmail.com">Contact Me</a>
           </div>
         </div>
@@ -834,7 +615,7 @@
     </header>
 
     <!-- OVERVIEW -->
-    <section id="about">
+    <section id="about" class="animate-up">
       <div class="container">
         <div class="section-heading">
           <div>
@@ -851,7 +632,7 @@
             <table class="overview-table">
               <tr>
                 <td>Education</td>
-                <td><strong>B.S. Electrical Engineering</strong><br>University of California, Riverside · Expected 2029</td>
+                <td><strong>B.S. Electrical Engineering</strong><br>University of California, Riverside</td>
               </tr>
               <tr>
                 <td>GPA</td>
@@ -859,7 +640,7 @@
               </tr>
               <tr>
                 <td>Leadership</td>
-                <td><strong>Projects Chair</strong><br>IEEE UCR Branch (Incoming)</td>
+                <td><strong>Projects Chair</strong><br>IEEE UCR Branch</td>
               </tr>
               <tr>
                 <td>Research</td>
@@ -873,7 +654,7 @@
           </div>
 
           <div class="quick-stats">
-            <div class="stat"><strong>3.87</strong><span>GPA / 4.00</span></div>
+            <div class="stat"><strong>3.84</strong><span>GPA / 4.00</span></div>
             <div class="stat"><strong>3×</strong><span>1st-place / finalist competition recognition</span></div>
             <div class="stat"><strong>1</strong><span>Granted invention patent</span></div>
             <div class="stat"><strong>5+</strong><span>Engineering disciplines explored</span></div>
@@ -883,7 +664,7 @@
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects">
+    <section id="projects" class="animate-up">
       <div class="container">
         <div class="section-heading">
           <div>
@@ -925,16 +706,16 @@
                 </div>
               </div>
 
-              <a class="project-link" href="https://github.com/anshenglu2019-design/anshenglu2019-design.github.io/blob/main/archive/cv-pipeline/README.md">View GitHub Repository →</a>
+              <a class="project-link" href="archive/cv-pipeline/README.md" target="_blank" rel="noopener noreferrer">View GitHub Repository →</a>
             </div>
 
             <div class="gallery two">
               <figure class="media">
-                <img src="assets/mealworm_raw.jpg" alt="Raw mealworm input image">
+                <img src="assets/mealworm_raw.jpg" alt="Raw overhead camera capture of mealworm biomass" loading="lazy">
                 <figcaption>Figure 1 · Raw overhead camera capture of mealworm biomass data collection.</figcaption>
               </figure>
               <figure class="media">
-                <img src="assets/inference_result.jpg" alt="Machine learning inference result">
+                <img src="assets/inference_result.jpg" alt="Machine learning inference result" loading="lazy">
                 <figcaption>Figure 2 · Inference showing worm detection and width measurement in dense scenes.</figcaption>
               </figure>
             </div>
@@ -969,7 +750,7 @@
             </div>
 
             <figure class="media">
-              <img src="assets/pcb_layout.png" alt="PCB layout in Altium Designer">
+              <img src="assets/pcb_layout.png" alt="PCB layout in Altium Designer" loading="lazy">
               <figcaption>Figure 3 · Initial automated control circuit layout and trace routing in Altium Designer.</figcaption>
             </figure>
           </article>
@@ -1004,19 +785,19 @@
 
             <div class="gallery two">
               <figure class="media">
-                <a class="video-link" href="https://youtu.be/rqDFj4NV7VE" target="_blank" rel="noopener">
-                  <img src="assets/robotic_arm_thumbnail.png" alt="Robotic arm motion control demo">
+                <a class="video-link" href="https://youtu.be/rqDFj4NV7VE" target="_blank" rel="noopener noreferrer" aria-label="Watch Robotic arm motion control demo on YouTube">
+                  <img src="assets/robotic_arm_thumbnail.png" alt="Robotic arm motion control demo" loading="lazy">
                 </a>
                 <figcaption>Video 1 · Hardware-in-the-loop motion control demo. Click to watch on YouTube.</figcaption>
               </figure>
               <figure class="media">
-                <img src="assets/step_response.png" alt="Closed-loop feedback step response">
+                <img src="assets/step_response.png" alt="Closed-loop feedback step response" loading="lazy">
                 <figcaption>Figure 4 · Closed-loop feedback performance achieving a critically damped response.</figcaption>
               </figure>
             </div>
 
-            <div class="project-content" style="padding-top: 10px;">
-              <h4 style="margin:0 0 12px;">Cross-Functional Technical Scope</h4>
+            <div class="project-content" style="padding-top: 20px;">
+              <h4 style="margin:0 0 16px; font-size: 1.1rem;">Cross-Functional Technical Scope</h4>
               <div class="project-details">
                 <div class="detail">
                   <strong>Electronics & E-CAD</strong>
@@ -1032,14 +813,14 @@
                 </div>
               </div>
 
-              <div class="gallery two" style="margin-top:24px;">
+              <div class="gallery two" style="margin-top:30px;">
                 <figure class="media">
-                  <a class="video-link" href="https://youtube.com/shorts/9p_X2iOrVEk" target="_blank" rel="noopener">
-                    <img src="assets/led_matrix_thumbnail.png" alt="LED matrix firmware demo">
+                  <a class="video-link" href="https://youtube.com/shorts/9p_X2iOrVEk" target="_blank" rel="noopener noreferrer" aria-label="Watch LED Matrix firmware demo on YouTube">
+                    <img src="assets/led_matrix_thumbnail.png" alt="LED matrix firmware demo" loading="lazy">
                   </a>
                   <figcaption>Video 2 · LED Matrix firmware logic. Click to watch on YouTube.</figcaption>
                 </figure>
-                <div class="detail" style="align-self:stretch; display:flex; align-items:center;">
+                <div class="detail" style="align-self:stretch; display:flex; align-items:center; border: none; border-radius: 0;">
                   <div>
                     <strong>Control Systems Validation</strong>
                     <p>Utilized MATLAB/Simulink to analyze dynamic performance and calculate control behavior for impedance-controlled systems to ensure operational stability.</p>
@@ -1054,7 +835,7 @@
     </section>
 
     <!-- PATENT -->
-    <section id="patent">
+    <section id="patent" class="animate-up">
       <div class="container">
         <div class="patent-card">
           <div class="section-number">03 · Intellectual Property</div>
@@ -1080,27 +861,27 @@
             </div>
           </div>
 
-          <a class="patent-link" href="assets/full_patent_certificate.pdf" target="_blank">View Official Patent Certificate →</a>
+          <a class="patent-link" href="assets/full_patent_certificate.pdf" target="_blank" rel="noopener noreferrer">View Official Patent Certificate →</a>
         </div>
 
-        <div class="gallery three" style="margin-top:20px;">
+        <div class="gallery three" style="margin-top:24px;">
           <figure class="media">
-            <img src="assets/Circuit_Design.png" alt="ESP32 to MPU6050 interface schematic">
+            <img src="assets/Circuit_Design.png" alt="ESP32 to MPU6050 interface schematic" loading="lazy">
             <figcaption>Figure 5 · System interconnect: I2C interface schematic between the ESP32 and MPU6050.</figcaption>
           </figure>
           <figure class="media">
-            <img src="assets/Hardware_Architecture.png" alt="Breadboard prototype">
+            <img src="assets/Hardware_Architecture.png" alt="Populated physical PCB and directional signaling layout" loading="lazy">
             <figcaption>Figure 6 · Populated physical PCB and directional signaling layout.</figcaption>
           </figure>
           <figure class="media">
-            <img src="assets/baton_prototype.png" alt="Physical prototype PCB assembly">
+            <img src="assets/baton_prototype.png" alt="Breadboard prototype showcasing ESP32 and MPU6050 signal validation" loading="lazy">
             <figcaption>Figure 7 · Breadboard prototype showcasing ESP32 and MPU6050 signal validation.</figcaption>
           </figure>
         </div>
 
-        <figure class="media" style="margin:3px 0 0;">
-          <a class="video-link" href="https://youtu.be/_PxIBCmbsC0" target="_blank" rel="noopener">
-            <img src="assets/patent_demo_thumbnail.png" alt="Patent device demonstration">
+        <figure class="media" style="margin:4px 0 0;">
+          <a class="video-link" href="https://youtu.be/_PxIBCmbsC0" target="_blank" rel="noopener noreferrer" aria-label="Watch Performance demonstration on YouTube">
+            <img src="assets/patent_demo_thumbnail.png" alt="Patent device demonstration" loading="lazy">
           </a>
           <figcaption>Video 3 · Performance demonstration of the motion-sensing signaling device. Click to watch on YouTube.</figcaption>
         </figure>
@@ -1108,16 +889,32 @@
     </section>
 
     <!-- EXPERIENCE -->
-    <section id="experience">
+    <section id="experience" class="animate-up">
       <div class="container">
         <div class="section-heading">
           <div>
             <div class="section-number">04 · Experience</div>
-            <h2 class="section-title">Club Experience</h2>
+            <h2 class="section-title">Professional & Club Experience</h2>
           </div>
         </div>
 
         <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-date">July 2026 – Present</div>
+            <div>
+              <h3>Research Member · Biomechanics and Biomaterials Design Laboratory</h3>
+              <p><strong>Safety & Operations:</strong> Assessed and enrolled into the Laboratory Hazard Assessment Tool protocols, managing chemical, mechanical, and operational safety criteria for facility access.</p>
+            </div>
+          </article>
+          
+          <article class="timeline-item">
+            <div class="timeline-date">Summer 2026</div>
+            <div>
+              <h3>Participant · Global Career Accelerator (L'Oréal)</h3>
+              <p><strong>Coding for Data Track:</strong> Selected to participate in an intensive virtual accelerator program bridging engineering disciplines with data analytics and programming.</p>
+            </div>
+          </article>
+
           <article class="timeline-item">
             <div class="timeline-date">Sep. 2023 – Jun. 2024</div>
             <div>
@@ -1132,7 +929,7 @@
     </section>
 
     <!-- AWARDS -->
-    <section id="awards">
+    <section id="awards" class="animate-up">
       <div class="container">
         <div class="section-heading">
           <div>
@@ -1168,16 +965,16 @@
           </article>
         </div>
 
-        <div class="gallery two" style="margin-top:20px;">
+        <div class="gallery two" style="margin-top:24px;">
           <figure class="media">
-            <a class="video-link" href="https://youtu.be/iRr88TgG7uw" target="_blank" rel="noopener">
-              <img src="assets/robot_sorting.png" alt="Autonomous color sorting robot run">
+            <a class="video-link" href="https://youtu.be/iRr88TgG7uw" target="_blank" rel="noopener noreferrer" aria-label="Watch Robotics Competition Run on YouTube">
+              <img src="assets/robot_sorting.png" alt="Autonomous color sorting robot run" loading="lazy">
             </a>
             <figcaption>Video 4 · 1st Place Run at the Robotics Competition — autonomous robot with a 3-Mecanum wheel chassis.</figcaption>
           </figure>
           <figure class="media">
-            <a class="video-link" href="https://youtube.com/shorts/zHiZNP-AuCE?feature=share" target="_blank" rel="noopener">
-              <img src="assets/robot_industrial.png" alt="Autonomous industrial robot run">
+            <a class="video-link" href="https://youtube.com/shorts/zHiZNP-AuCE?feature=share" target="_blank" rel="noopener noreferrer" aria-label="Watch Industrial Robot Competition Run on YouTube">
+              <img src="assets/robot_industrial.png" alt="Autonomous industrial robot run" loading="lazy">
             </a>
             <figcaption>Video 5 · 1st Place Run at the Industrial Robot Competition — path-following line tracking and state-machine logic.</figcaption>
           </figure>
@@ -1186,7 +983,7 @@
     </section>
 
     <!-- STUDIES -->
-    <section id="studies">
+    <section id="studies" class="animate-up">
       <div class="container">
         <div class="section-heading">
           <div>
@@ -1211,9 +1008,9 @@
               to the vehicle's frame, establishing a reliable baseline for real-time
               state estimation and calibration.
             </p>
-            <img src="assets/MATH_data_plots.png" alt="Gravity vector data plots">
+            <img src="assets/MATH_data_plots.png" alt="Gravity vector data plots" loading="lazy">
             <p><small>Figure 8 · Data plots showing gravity vector components, roll/pitch estimation, angular estimation error convergence, and translational linear acceleration parameters.</small></p>
-            <a class="report-link" href="assets/gravity_vector_report.pdf" target="_blank">Read the Full Technical Report →</a>
+            <a class="report-link" href="assets/gravity_vector_report.pdf" target="_blank" rel="noopener noreferrer">Read the Full Technical Report →</a>
           </article>
 
           <article class="study-card">
@@ -1226,16 +1023,16 @@
               Analyzed how structural adjustments alter system resonance frequencies
               and mapped corresponding power dissipation trends to optimize energy throughput.
             </p>
-            <img src="assets/PHYS_data_plots.png" alt="Mechanical resonance data plot">
+            <img src="assets/PHYS_data_plots.png" alt="Mechanical resonance data plot" loading="lazy">
             <p><small>Figure 9 · Relationship between spring constant and power consumption at a fixed frequency in a shaking device.</small></p>
-            <a class="report-link" href="assets/resonance_report.pdf" target="_blank">Read the Full Technical Report →</a>
+            <a class="report-link" href="assets/resonance_report.pdf" target="_blank" rel="noopener noreferrer">Read the Full Technical Report →</a>
           </article>
         </div>
       </div>
     </section>
 
     <!-- SKILLS -->
-    <section id="skills">
+    <section id="skills" class="animate-up">
       <div class="container">
         <div class="section-heading">
           <div>
@@ -1249,9 +1046,10 @@
             <h3>Programming & Computing</h3>
             <div class="tags">
               <span class="tag">C / C++</span>
-              <span class="tag">Python (PyTorch/OpenCV)</span>
-              <!-- <span class="tag">PyTorch</span>
-              <span class="tag">OpenCV</span> -->
+              <span class="tag">Python</span>
+              <span class="tag">Verilog</span>
+              <span class="tag">PyTorch</span>
+              <span class="tag">OpenCV</span>
               <span class="tag">MATLAB / Simulink</span>
               <span class="tag">LabVIEW</span>
               <span class="tag">ROS</span>
@@ -1265,8 +1063,10 @@
               <span class="tag">Creo</span>
               <span class="tag">SolidWorks</span>
               <span class="tag">Arduino</span>
-              <span class="tag">Visual Studio Code</span>
-              <span class="tag">Tinkercad</span>
+              <span class="tag">Visual Studio</span>
+              <span class="tag">VS Code</span>
+              <span class="tag">Embedded Systems</span>
+              <span class="tag">PCB Design</span>
             </div>
           </div>
         </div>
@@ -1284,13 +1084,31 @@
         </div>
         <div class="footer-links">
           <a href="mailto:anshenglu2019@gmail.com">Email</a>
-          <a href="https://linkedin.com/in/an-sheng-lu-2289462b5" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="assets/An-Sheng_Lu_Resume.pdf" target="_blank">Resume</a>
+          <a href="https://linkedin.com/in/an-sheng-lu-2289462b5" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="assets/An-Sheng_Lu_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
         </div>
       </div>
       <div class="copyright">© An-Sheng (Anson) Lu · Electrical Engineering Undergraduate · UC Riverside</div>
     </div>
   </footer>
 
+  <script>
+    // Trigger smooth fade-in animations when scrolling
+    document.addEventListener("DOMContentLoaded", () => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.animationPlayState = 'running';
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.animate-up').forEach(el => {
+        el.style.animationPlayState = 'paused';
+        observer.observe(el);
+      });
+    });
+  </script>
 </body>
 </html>
