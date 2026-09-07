@@ -25,7 +25,7 @@
 
 ##  Engineering Projects & Research
 
-### 1. Undergraduate Research Assistant | Mealworm Growth Monitoring | RaMS Lab, UCR
+### 1. Undergraduate Research Assistant | Mealworm Growth Monitoring | Robotics and Medical Systems (RaMS) Laboratory, UCR
 *Oct. 2025 - Present*
 *   **Problem:** Traditional growth monitoring involves significant time costs and manual work for measurement.
 *   **Approach:** Engineered an end-to-end **Computer Vision and Deep Learning** pipeline using an **Amodal Instance Segmentation with Transformer (AISFormer)** for mealworm detection and  width measurement for growth stage classification in high-occlusion, overlapping environments.
@@ -49,7 +49,7 @@
 
 <br>
 
-### 2. FSAE Electrical Intern | Embedded Systems & Hardware | Highlander Racing, UCR
+### 2. FSAE Electrical Intern | Electrical Subsystem | Highlander Racing, UCR
 *Apr. 2026 - Present*
 *   **Problem:** Bridging theoretical circuit design with physical manufacturing constraints.
 *   **Approach:** Designed and routed control circuits for sensor integration using **Altium Designer** with a focus on trace routing and component footprint mapping.
@@ -62,7 +62,20 @@
 
 <br>
 
-### 3. Robotics Intern | Mechatronic Systems Development | German Aerospace Center - DLR, Germany
+### 3. Undergraduate Research Assistant | Right Heart Simulator (Physical Flow Testbed) | Biomechanics and Biomaterials Design Laboratory (BBDL), UCR
+*May 2026 - Aug. 2026*
+*   **Problem:** Coordinating multi-disciplinary hardware, electrical, and mechanical updates to stabilize the Right Heart Simulator's experimental performance.
+*   **Approach:** Integrated electronic troubleshooting, precision circuit mitigation, and SolidWorks mechanical enclosure redesigns to improve signal integrity and fluid containment.
+*   **Insight:** Comprehensive instrumentation design requires continuous co-design between electrical circuitry and mechanical housing to ensure reliable experimental outcomes.
+
+<p align="center">
+  <img src="assets/pcb_layout.png" width="500" alt="PCB Layout">
+  <br><em>Figure 3: Initial automated control circuit layout and trace routing in Altium Designer.</em>
+</p>
+
+<br>
+
+### 4. Robotics Intern | Mechatronic Systems Development | German Aerospace Center - DLR, Germany
 *August 2024*
 *   **Problem:** Achieving stable, predictable trajectory tracking in physical robotic systems.
 *   **Approach:** Integrated a **ROBOTIS OpenManipulator-X** arm; customized a rail system with **3D-printed structural interfaces** to extend the platform's workspace.
