@@ -69,8 +69,8 @@
 *   **Insight:** Comprehensive instrumentation design requires continuous co-design between electrical circuitry and mechanical housing to ensure reliable experimental outcomes.
 
 <p align="center">
-  <img src="assets/pcb_layout.png" width="500" alt="PCB Layout">
-  <br><em>Figure 3: Initial automated control circuit layout and trace routing in Altium Designer.</em>
+  <img src="assets/Full .jpg" width="500" alt="PCB Layout">
+  <br><em>Figure 4: Initial automated control circuit layout and trace routing in Altium Designer.</em>
 </p>
 
 <br>
