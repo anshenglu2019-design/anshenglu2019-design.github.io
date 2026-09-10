@@ -204,7 +204,7 @@
 * **Technical Overview:** Programmed to simulate a tri-axial accelerometer processing pipeline to identify the gravity vector within a body-fixed reference frame accurately in **MATLAB**. This system successfully resolved orientation metrics relative to the vehicle's frame, establishing a reliable baseline for real-time state estimation and calibration.
 <p align="center">
   <img src="assets/MATH_data_plots.png" width="500" alt="Gravity Vector Data Plot">
-  <br><em>Figure 8: Data plots - (a) Complete separation of time-varying gravity vector components; (b) Resulting dynamic roll/pitch tilt estimation; (c) Convergence of angular estimation errors toward zero; (d) Extracted translational linear acceleration parameters.</em>
+  <br><em>Figure 9: Data plots - (a) Complete separation of time-varying gravity vector components; (b) Resulting dynamic roll/pitch tilt estimation; (c) Convergence of angular estimation errors toward zero; (d) Extracted translational linear acceleration parameters.</em>
 </p>
 
 [Read the Full Technical Report](assets/gravity_vector_report.pdf)
@@ -214,7 +214,7 @@
 * **Technical Overview:** Conducted parametric sweeps of spring-constant variations within a mechanical shaking mechanism to evaluate energy transfer efficiency. Analyzed how structural adjustments alter system resonance frequencies and mapped corresponding power dissipation trends to optimize energy throughput.
 <p align="center">
   <img src="assets/PHYS_data_plots.png" width="500" alt="Data plot of the relationship between Spring Constant and Power Consumption at a fixed frequency">
-  <br><em>Figure 9: Data plot of the relationship between Spring Constant and Power Consumption at a fixed frequency in a shaking device.</em>
+  <br><em>Figure 10: Data plot of the relationship between Spring Constant and Power Consumption at a fixed frequency in a shaking device.</em>
 </p>
 
 [Read the Full Technical Report](assets/resonance_report.pdf)
