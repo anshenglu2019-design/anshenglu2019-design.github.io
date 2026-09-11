@@ -401,12 +401,12 @@ Here is an example of how the model would visualize the result (Phase 4). Before
     <td length="50%" align="center" valign="bottom">
       <img src="https://github.com/anshenglu2019-design/biomass-cv-pipeline/blob/main/docs/3_9.jpg" height="400" alt="Raw Mealworm Input Image">
       <br>
-      <em>Figure 10: Raw overhead camera capture of mealworm biomass data collection.</em>
+      <em>Figure 1: Raw overhead camera capture of mealworm biomass data collection.</em>
     </td>
     <td length="50%" align="center" valign="bottom">
       <img src="https://github.com/anshenglu2019-design/biomass-cv-pipeline/blob/main/docs/filter_length_debug_7_28_3_9.png" height="400" alt="ML Inference Result">
       <br>
-      <em>Figure 11: Inference showing worm detection and length measurement in dense scenes.</em>
+      <em>Figure 2: Inference showing worm detection and length measurement in dense scenes.</em>
     </td>
   </tr>
 </table>
