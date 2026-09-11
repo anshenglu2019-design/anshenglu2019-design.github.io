@@ -394,19 +394,19 @@ By accurately tracking these error margins, the pipeline continuously filters tr
 
 ## Inference Result
 
-Here is an example of how the result is visualized by the model (Phase 4).
+Here is an example of how the model would visualize the result (Phase 4). Before running the code (`/src/length_measure.py`), make sure to change to the correct calibration value in *mm/pixel*. 
 
 <table>
   <tr>
-    <td width="50%" align="center" valign="bottom">
-      <img src="https://github.com/anshenglu2019-design/anshenglu2019-design.github.io/blob/main/assets/mealworm_raw.jpg" height="400" alt="Raw Mealworm Input Image">
+    <td length="50%" align="center" valign="bottom">
+      <img src="https://github.com/anshenglu2019-design/biomass-cv-pipeline/blob/main/docs/3_9.jpg" height="400" alt="Raw Mealworm Input Image">
       <br>
-      <em>Figure 1: Raw overhead camera capture of mealworm biomass data collection.</em>
+      <em>Figure 10: Raw overhead camera capture of mealworm biomass data collection.</em>
     </td>
-    <td width="50%" align="center" valign="bottom">
-      <img src="https://github.com/anshenglu2019-design/anshenglu2019-design.github.io/blob/main/assets/inference_result.jpg" height="400" alt="ML Inference Result">
+    <td length="50%" align="center" valign="bottom">
+      <img src="https://github.com/anshenglu2019-design/biomass-cv-pipeline/blob/main/docs/filter_length_debug_7_28_3_9.png" height="400" alt="ML Inference Result">
       <br>
-      <em>Figure 2: Inference showing worm detection and width measurement in dense scenes.</em>
+      <em>Figure 11: Inference showing worm detection and length measurement in dense scenes.</em>
     </td>
   </tr>
 </table>
