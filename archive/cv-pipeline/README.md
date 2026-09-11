@@ -368,12 +368,7 @@ The underlying algorithmic pipeline is designed to deploy within a containerized
 * **Environment Runtime:** Python 3.8+ / Virtualenv
 
 ### Key Frameworks & Dependencies
-The software stack relies on the following primary open-source distributions (detailed specifications are mapped in `requirements.txt`):
-* `torch` & `torchvision` (Deep learning framework & model optimization)
-* `opencv-python` (Real-time image manipulation & HSV/BGR color-space thresholding)
-* `numpy` (High-performance matrix manipulations for coordinate masking)
-* `scipy` (Non-linear regression optimization for Gompertz curve fitting)
-* `AISFormer` (Advanced transformer-based amodal instance segmentation architecture)
+The software stack relies on the following primary open-source distributions (detailed specifications are mapped in `requirements.txt`).
 
 ---
 
@@ -381,11 +376,19 @@ The software stack relies on the following primary open-source distributions (de
 
 To validate the computer vision system’s estimates under high-density occlusion, absolute physical ground-truth measurements are established by capturing separate, non-occluded images of individual larvae alongside a spatial calibration grid ruler. 
 
-Overall model width accuracy is quantified using **Mean Absolute Error (MAE)** across sampled validation cohorts:
+Overall model length accuracy is quantified using two primary metrics across sampled validation cohorts:
 
-$$\text{MAE} = \frac{1}{n} \sum_{i=1}^{n} |W_{\text{predicted}, i} - W_{\text{ground truth}, i}|$$
+### 1. Mean Absolute Error (MAE)
+$$\text{MAE} = \frac{1}{n} \sum_{i=1}^{n} |L_{\text{predicted}, i} - L_{\text{ground truth}, i}|$$
 
-By accurately tracking this error margin, the pipeline continuously filters tracking anomalies, extracts pure inlier growth trends, classifies biological instar stages, and constructs reliable longitudinal growth curves for farm optimization.
+Where $L_{\text{predicted}}$ and $L_{\text{ground truth}}$ represent the predicted and absolute physical larval lengths in millimeters, respectively. MAE provides a direct measure of physical error magnitude across the dataset.
+
+### 2. Length Accuracy Percentage
+$$\text{Accuracy (in percentage)} = \left( 1 - \frac{1}{n} \sum_{i=1}^{n} \frac{|L_{\text{predicted}, i} - L_{\text{ground truth}, i}|}{L_{\text{ground truth}, i}} \right) \times 100$$
+
+This percentage metric reflects the overall fidelity of the model's spatial predictions relative to the physical scale of individual larvae across varying growth stages.
+
+By accurately tracking these error margins, the pipeline continuously filters tracking anomalies, extracts pure inlier growth trends, classifies biological instar stages, and constructs reliable longitudinal growth curves for farm optimization.
 
 ---
 
