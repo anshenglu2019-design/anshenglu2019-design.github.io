@@ -582,6 +582,52 @@
     .patent-link { display: inline-flex; margin-top: 21px; color: #7dd3fc; font-size: .76rem; font-weight: 800; }
     .patent-link:hover { color: white; }
 
+    /* Patent figures — static 3-column layout */
+    .patent-gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0;
+        width: 100%;
+    }
+    
+    .patent-figure {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    .patent-figure img {
+        display: block;
+        width: 100%;
+        height: 290px;
+        object-fit: cover;
+    }
+    
+    .patent-figure figcaption {
+        padding: 14px 18px 16px;
+        line-height: 1.45;
+    }
+    
+    .patent-figure figcaption strong {
+        display: block;
+        margin-bottom: 4px;
+    }
+    
+    .patent-figure figcaption span {
+        display: block;
+    }
+    
+    /* Mobile */
+    @media (max-width: 800px) {
+        .patent-gallery {
+            grid-template-columns: 1fr;
+        }
+    
+        .patent-figure img {
+            height: auto;
+        }
+    }
+
     /* Experience / awards */
     .timeline { border-top: 1px solid var(--line); display: grid; gap: 0; }
     .timeline-item {
@@ -1053,19 +1099,22 @@
           <a class="patent-link" href="assets/full_patent_certificate.pdf" target="_blank" rel="noopener">View Official Patent Certificate →</a>
         </div>
 
-        <div class="gallery three" style="margin-top:20px;">
-          <figure class="media">
-            <img src="assets/Circuit_Design.png" alt="ESP32 to MPU6050 interface schematic">
-            <figcaption>Figure 6 · System interconnect: I2C interface schematic between the ESP32 and MPU6050.</figcaption>
-          </figure>
-          <figure class="media">
-            <img src="assets/Hardware_Architecture.png" alt="Breadboard prototype">
-            <figcaption>Figure 7 · Populated physical PCB and directional signaling layout.</figcaption>
-          </figure>
-          <figure class="media">
-            <img src="assets/baton_prototype.png" alt="Physical prototype PCB assembly">
-            <figcaption>Figure 8 · Breadboard prototype showcasing ESP32 and MPU6050 signal validation.</figcaption>
-          </figure>
+        <!-- Patent Figures -->
+        <div class="patent-gallery">
+            <figure class="patent-figure">
+                <img src="assets/Circuit_Design.png" alt="I2C interface schematic between ESP32 and MPU6050">
+                <figcaption>Figure 6 · System interconnect: I2C interface schematic between the ESP32 and MPU6050.</figcaption>
+            </figure>
+        
+            <figure class="patent-figure">
+                <img src="assets/Hardware_Architecture.png" alt="Populated physical PCB and directional signaling layout">
+                <figcaption>Figure 7 · Populated physical PCB and directional signaling layout.</figcaption>
+            </figure>
+        
+            <figure class="patent-figure">
+                <img src="assets/baton_prototype.png" alt="ESP32 and MPU6050 breadboard prototype">
+                <figcaption>Video 3 · Performance demonstration of the motion-sensing signaling device. Click to watch on YouTube.</figcaption>
+            </figure>
         </div>
 
         <figure class="media" style="margin:3px 0 0;">
