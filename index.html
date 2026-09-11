@@ -1306,17 +1306,18 @@
 
   <script>
     const t = document.getElementById('themeToggle');
-    const saved = localStorage.getItem('portfolio-theme');
-    if (saved) {
-      document.documentElement.dataset.theme = saved;
-      t.textContent = saved === 'dark' ? '☀' : '☾';
-    }
+    
+    // Runs once on page load — sets the initial theme
+    const saved = localStorage.getItem('portfolio-theme') || 'dark';
+    document.documentElement.dataset.theme = saved;
+    t.textContent = saved === 'dark' ? '☀' : '☾';
+    
+    // Runs every time the button is clicked — actually toggles the theme
     t.addEventListener('click', () => {
       const n = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
-      const t = document.getElementById('themeToggle');
-      const saved = localStorage.getItem('portfolio-theme') || 'dark';
-      document.documentElement.dataset.theme = saved;
-      t.textContent = saved === 'dark' ? '☀' : '☾';
+      document.documentElement.dataset.theme = n;
+      localStorage.setItem('portfolio-theme', n);
+      t.textContent = n === 'dark' ? '☀' : '☾';
     });
 
     const ro = new IntersectionObserver(es => es.forEach(e => {
