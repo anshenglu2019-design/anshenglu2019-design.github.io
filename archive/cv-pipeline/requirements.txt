@@ -1,1 +1,30 @@
+# Core numerical / scientific computing
+numpy==2.3.5
+scipy==1.17.1
+pandas==3.0.3
 
+# Computer vision / image processing
+opencv-python==4.13.0.92
+scikit-image==0.26.0
+
+# Deep learning
+torch==2.11.0
+torchvision==0.26.0
+
+# Detectron2 / AISFormer dependencies
+fvcore==0.1.5.post20221221
+iopath==0.1.9
+yacs==0.1.8
+pycocotools==2.0.11
+pytorch_toolbelt==0.8.0
+
+# Visualization
+matplotlib==3.10.8
+
+# Utility / configuration
+PyYAML==6.0.3
+tqdm==4.67.3
+tabulate==0.10.0
+
+# Large COCO annotation streaming
+ijson
