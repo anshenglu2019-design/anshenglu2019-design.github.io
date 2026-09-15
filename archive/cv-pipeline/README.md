@@ -2,9 +2,11 @@
 
 > **Repository Notice:** The core source code, model weights, and underlying datasets for this pipeline are proprietary assets maintained within a private institutional repository for laboratory handoff and ongoing research. This public workspace serves as an architectural blueprint, deployment specification, and visual portfolio showcasing the system's engineering methodology and performance results.
 
-This repository houses the computer vision and automated data processing pipeline for larval growth tracking of the mealworm (*Tenebrio molitor*). Industrial insect farming requires transitioning from manual handling to automated robotic rearing systems driven by computer vision.
+This repository houses the computer vision and automated data processing pipeline for larval growth tracking of the mealworm (Tenebrio molitor). Industrial insect farming requires transitioning from manual handling to automated robotic rearing systems driven by computer vision.
 
-A critical bottleneck is larval growth tracking to optimize feeding and predict harvest readiness. Traditional computer vision metrics fail in high-density farm environments because larvae heavily cluster and occlude one another. This project advances the amodal framework by developing a computer vision pipeline prioritizing larval width measurement over length, as body width remains visible under occlusion to provide a robust metric for developmental instar classification.
+A critical bottleneck is larval growth tracking to optimize feeding and predict harvest readiness. Traditional computer vision metrics fail in high-density farm environments because larvae heavily cluster and occlude one another. This project advances the amodal framework by developing a computer vision pipeline prioritizing larval length measurement to provide a robust metric for developmental instar classification.
+
+The primary focus of this pipeline is to accurately predict worm length across different ages for future phenotyping applications. Overall, the model evaluation demonstrates that the pipeline achieves approximately 90% accuracy (measured by the percentage error between the ground-truth length and model-estimated length) across 40 batches of mealworms at varying developmental stages.
 
 ---
 
