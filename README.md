@@ -3,7 +3,7 @@
 # An-Sheng (Anson) Lu
 ### Electrical Engineering Undergraduate | UC Riverside
 
-*[Email](mailto:anshenglu2019@gmail.com) | [LinkedIn](https://linkedin.com/in/an-sheng-lu-2289462b5) | [Download Resume (PDF)](assets/An-Sheng_Lu_Resume.pdf)*
+*[Email](mailto:anshenglu2019@gmail.com) | [LinkedIn](https://linkedin.com/in/an-sheng-lu-2289462b5) | [Download Resume (PDF)](assets/An-Sheng%20Lu%20-%20Resume.pdf)*
 
 </div>
 
